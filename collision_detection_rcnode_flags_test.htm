@@ -417,8 +417,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Объект проходим по всей области это ноды.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Но не проходим, где размещены видимые сетки.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_88DD4A529A"><strong>Т.е. выглядит так, что включение прокси геометрии на уровнях нод и шейпов в составе РК, приводит к полной потере &quot;осязаемости&quot; объекта.</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_88DD4A529A"><strong>Игрок может свободно проходить через такую зону.</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_88DD4A529A"><strong>Т.е. выглядит так, что включение прокси геометрии на уровнях нод и шейпов в составе РК, приводит к полной потере &quot;осязаемости&quot; объекта. Игрок может свободно проходить через такую зону.</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">С поправкой на возможность &quot;ошибок в тесте&quot; или неучтенного фактора, можно предполагать, что прокси геометрия вообще не считывается для статичных объектов.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Включение ХББ и настройка внутреннего объема оного, результативно только с &quot;живыми&quot; объектами.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Или для управления областью выделения, см. раздел Б<a class="local_link" href="bounding_box.htm"><span class="de_2B94C39861">оунд Бокса</span></a>.</div>
@@ -436,7 +435,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Итого, что это дает в целом?</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Теоретически разбиение одной большой поверхности на много меньших участков и установка флага 5, может сколько-то повысить фпс.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Против случая одной большой поверхности и флага 3.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е практические тесты, однозначно показали пользу разбиения большой поверхности на меньшие участки.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AF7A823B3B">Т.е практические тесты, однозначно показали пользу разбиения большой поверхности на меньшие участки!</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Равно пользу от сокращения в них полигонов. Чем проще геометрия, тем лучше для просчета коллизий.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Однако, влияние флага не показывает значительных изменений фпс.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">А игры вокруг значения has bounding box и настроек оного, показали вовсе прямо обратный результат.</div>
@@ -452,10 +451,12 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Примечание.</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Флаг детектирования работает в связке с другими параметрами.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Например:</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- если модель содержит<a class="local_link" href="nistringextradata_spisok_komand.htm"><span class="de_2B94C39861"> стринг NCO </span></a> то уже нет никакого смысла что-то шаманить с флагами нод. Т.к. просчет столкновений будет отключен по умолчанию.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- если модель содержит<a class="local_link" href="nistringextradata_spisok_komand.htm"><span class="de_2B94C39861"> стринг NCO </span></a> то уже нет никакого смысла что-то шаманить с флагами нод. </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.к. просчет столкновений будет отключен по умолчанию.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- но если это <a class="local_link" href="nicollisionswitch.htm"><span class="de_2B94C39861">niCollisionSwitch Нода</span></a>, то флаг становится важным моментом! Включая, или отключая просчет столкновений.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- также, все нечетные флаги сделают ноду скрытой! А четные наоборот. Просто к слову. </div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Однако, РК нода правильно помещенная в корень файла, будет скрытой всегда.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><hr style="width: 100%; height: 5px; text-align: center; margin-left: auto; margin-right: auto; border:none; background-color:#0012ff; color: #0012ff; clear:none;" /></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Таблица влияние флагов на метод детектирования коллизий.</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_1036 detbl" style="width: 200px; height: 30; margin-left: 0; margin-right: auto;">

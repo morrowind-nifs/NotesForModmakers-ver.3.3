@@ -353,7 +353,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>В остальном.</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Это обычная КС нода имеющая некоторые свойства.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><a class="local_link" href="nistencilproperty.htm"><span class="de_2B94C39861">Стенсил </span></a> не понятно зачем они здесь нужны... отрисовка на обе стороны?</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><a class="local_link" href="niwireframeproperty.htm"><span class="de_2B94C39861">Варфрейм</span></a>, создает те самые зеленые линии по граням объекта.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><a class="local_link" href="niwireframeproperty__.htm"><span class="de_2B94C39861">Варфрейм</span></a>, создает те самые зеленые линии по граням объекта.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><a class="local_link" href="nimaterialproperty.htm"><span class="de_2B94C39861">Материал</span></a>, отвечает за цвет, здесь зеленый.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><a class="local_link" href="nivertexcolorproperty.htm"><span class="de_2B94C39861">ВертексКолор</span></a>, переопределяет воздействие освещения. Дабы оно не влияло.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
@@ -363,19 +363,18 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Тесты.</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_88DD4A529A"><strong>Показали возможность добавления этой ноды в другие типы объектов!</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Например, если взять абстрактный предмет:</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Например, если взять абстрактный предмет (миск айтим):</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- Создать пустую ноду без имени. Ни флагов ни настроек ничего менять не надо. Т.е. флаг 0, будет достаточно.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- Никаких свойств или объектов в нее добавлять, тоже не надо! Просто пустая нода с флагом 0.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- В настройках этой ноды включить использование ББ (&quot;has bounding box = yes&quot;) и выбрав режим BOX (флаг 1) задать зону. </div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Можно выбрать режим сферы! Здесь она отобразиться &quot;во всей красе&quot;. ББ = флаг 0.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_DBF328B893">Вероятно можно выбирать и другие режимы (не тестировалось).</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- Подключить модель в редактор в раздел items (или любой иной)</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- Поместить в сцену, нажать F4. Если в игре, то консоль и TCB.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Теперь можно будет увидеть зеленые контуры выделения не только в файлах существ, но и в измененном предмете.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Дальнейшие наблюдение показали следующее.</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Любая безымянная пустая нода со включенным режимом использования <a class="local_link" href="collision_detection_about_proxy_object.htm"><span class="de_2B94C39861">прокси геометрии</span></a>, ака &quot;has bounding box = 1 &quot; (ХББ), &quot;притягивает&quot; к себе Mob Bound ноду!</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. при включении TCB режима, движок автоматически добавит эту ноду в состав безымянной ноды, чем покажет форму и габариты прокси геометрии.<br />Также, в файле, можно создать несколько пустых безымянных нод с флагом ХББ и все они, по F4 (или TCB), будут выделены зеленым контуром!</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. при включении TCB режима, движок автоматически добавит эту ноду в состав безымянной ноды, чем покажет ее форму и габариты прокси геометрии.<br />Также, в файле, можно создать несколько пустых безымянных нод с флагом ХББ и все они, по F4 (или TCB), будут выделены зеленым контуром!</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Примечание.</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Наличие <a class="local_link" href="bounding_box.htm"><span class="de_2B94C39861">Bounding Box </span></a>ноды в предмете, никак не повлияет на появление зеленых контуров.</div>
@@ -410,7 +409,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Примечание.</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Влияние пустых нод с включенной прокси геометрией на положение плашки с названием объекта - не определено.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. если именная нода ББ показывает точное влияние на положение плашки с именем, то пустая нода показывает неопределенный результат.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. если именная нода <a class="local_link" href="bounding_box.htm"><span class="de_2B94C39861">ББ </span></a>показывает точное влияние на положение плашки с именем, то пустая нода показывает неопределенный результат.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Вероятнее всего, что не показывает вовсе.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Отчего такие пустые ноды, выглядят полезными только в целях дебагинга некой зоны вокруг объекта.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
@@ -449,6 +448,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">и выбран режим BOX.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Здесь используется измененная версия ниф.хмл файла.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">В обычной версии 1.1.3 достаточно поставить флаг =1</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td><td class="de_td_518" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Представление по SSG.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
@@ -462,7 +462,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="512" height="305" class=" de_780D01ADE8" src="Pics/drex_mob_bound_custom_6.png"/></div>
 </td></tr><tr style="height: 0px;">
 <td class="de_td_601" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top;" colspan = "1" rowspan = "1" >
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Нескольку пустых нод.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Нескольку пустых нод в одном ниф файле.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">+ ББ нода.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Одна из нод использует режим сферы.. и ее здесь действительно видно как сферу!</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Вторая обычный куб.</div>

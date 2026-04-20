@@ -337,16 +337,17 @@
 <div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Выделенные примечания по этому объекту.</strong></div>
 <div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">См. примеры использования этого объекта, как такового, в папке DATA FILES\MESHES\E - где лежит вся &quot;магия&quot;.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. там именно и лежат pattern.ниф файлы.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Примечание.</strong></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Было мнение, что Dummy01 отвечает за позиционирование магического щита и моделей каста заклинаний - под заклинателем во время пользования ими.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Было мнение, что Dummy01 отвечает за позиционирование магического щита и моделей каста заклинаний, под заклинателем, или его целью.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. если объекты ниф файла щита не находятся в детях dummy01, то в игре модель не будет нормально передвигаться вместе с игроком, либо иным объектом (НПС, или существом).</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Однако, последующие тесты показали обратное.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Модель щита, или каста заклинания, появляется и двигается вместе с Использующими их и без наличия Dummy01 в составе ниф файла.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Подергивание же щитов, при движении, было связано с </span><a class="local_link" href="nibsanimationnode.htm"><span class="de_0F609BFBFC">флагами анимации</span></a><span class="de_823826CA2C">.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Был нужен флаг 64 вместо 42. Это свежие, за 2019ый год данные!</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Но еще лучше применить флаг 128. </span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Т.е. в анимационных нодах моделей магических щитов лучше использовать флаг 128. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Т.е. в анимационных нодах моделей магических щитов лучше использовать флаг 128 (т.е. на анимационной ноде в корне файла). </span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Примечание.</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">DummyХХ - содержатся в составе скелетов существ и НПС.</div>
@@ -431,6 +432,10 @@
 <td class="de_td_518" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">vfx_pattern03.nif -&gt;Dummy03 смещен от центра на 210 ед.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">При этом, вероятно взрыва &quot;под ногами&quot; кастующего возрастает в разы! </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Впрочем, следует оговориться, что за активацию взрыва отвечает Bounding Box объект из ниф файла снаряда магии.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Т.е. смещение даммика, здесь, приводит и к смещению всего его содержимого, в т.ч. ББокса в исходном файле.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td><td class="de_td_518" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 480px; vertical-align: top;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">vfx_pattern03.nif -&gt;Dummy03 смещен от центра на 20 ед.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Такой снаряд будет лететь далеко и точно.</span></div>
@@ -454,6 +459,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">На единичный снаряд это не воздействует.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Т.к. для него нет vfx_pattern файла, он помещается в сцену сам по себе. Без дополнительного слота.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Что впрочем, вполне логично.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr></table></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><hr style="width: 100%; height: 5px; text-align: center; margin-left: auto; margin-right: auto; border:none; background-color:#0012ff; color: #0012ff; clear:none;" /></div>
 </div>                                    			

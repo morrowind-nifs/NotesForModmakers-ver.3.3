@@ -337,6 +337,19 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Actual item Enchantment Capacity = (<span class="de_273658AF71">Enchantment Capacity</span> * <strong>fEnchantmentMult</strong>).</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_273658AF71">Enchantment Capacity</span> - магическая емкость вещи выставненная в TES CS</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Примечание.</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Если 0.1 то, к примеру, эбонитовая кираса с вместительностью энчанта 400, получит (в игре) объем для зачарования =40.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Если 1.0 - 440</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Если 2.1 - 839.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Если 0.0 - то вне зависимости от указанно в редакторе, объем для зачарования будет равен нулю!</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_752695828C"><strong>Т.е. 0.1 фактически, работает на понижение доступного объема!</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Что в целом выглядит странным, т.е. приходится указывать неопределенно больший объем, чем он должен быть на самом деле.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Для той же кирасы, это 400.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">А для объектов с объемом 10-19 это показывает доступность, всего ОДНОЙ единицы зачарования!</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. получается странным, как ванильные предметы имеют урезанные характеристики вместительности зачарования.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Отчего, было бы правильным установить это значение как равное 1.0000, таким образом сделав доступным весь заложенный в настройках объем.<br />А не обрезать оный до второго знака. </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><hr style="width: 100%; height: 4px; text-align: center; margin-left: auto; margin-right: auto; border:none; background-color:#0012ff; color: #0012ff; clear:none;" /></div>
 </div>                                    			
                 			</div>
 </body>
