@@ -338,17 +338,16 @@
 <div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Различные примечания по этому объекту.</strong></div>
 <div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>часть вторая.</strong></div>
 <div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">(продолжаем набивать кол-во знаков)</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Примечания.</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_8ABF6A5533"><strong>Актуально только для существ!</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Для всех прочих объектов размеры ВВ могут быть любыми!</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_024D4EFAB7">Для всех прочих типов объектов размеры ВВ могут быть любыми!</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_96D6BE88DC"><strong>– &#160; &#160; Если Radius Bound Box по оси Z меньше чем 15, игра улетит в краш! </strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_96D6BE88DC"><strong>– &#160; &#160; Если размер самого существа меньше 20 по оси Z, игра улетит в краш!</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_96D6BE88DC"><strong>– &#160; &#160; Никогда не создавайте Bound Box меньше 15-20 и не создавайте существ (в МАХ, Blender) меньше 20 ед по оси Z!</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_96D6BE88DC"><strong>– &#160; &#160; Если вы случайно сделали такое и получили краш игры, то в Warning.txt появится запись:</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_BBA9EDC90E">Step box height of 0 on XXXXXcreature (где ХХХ ИДе существа).</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_BBA9EDC90E"><strong>Впрочем, размер существа может быть скомпенсирован Bound Box-ом большего, чем 20 ед по оси Z размера.</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_BBA9EDC90E"><strong>Т.е. существо 10 ед, но его ББ -&gt;20.</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_BBA9EDC90E"><strong>Т.е. существо (может быть) 10 ед, но его ББ (должен стать) -&gt;20.</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_96D6BE88DC"><strong>Размеры XY могут быть меньше 10 но всегда больше 1. </strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_96D6BE88DC"><strong>Иначе — краш! </strong></span></div>
@@ -359,7 +358,6 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Bounding Box применяется в магических снарядах.</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Если его нет, «большие» сгустки магии будут взрываться при малейшем касании любой поверхности своим краем. </span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Т.е. даже если самая малая частица коснется чего-то - произойдет реакция!</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Если ББ есть — снаряд сможет пролетать в небольшого размера окна и двери, свободно задевая их частицами хвоста, или ореолом.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Т.е. ББ - позволяет создать, своего рода, &quot;ударное ядро&quot; и полностью игнорировать просчет столкновений по видимым сеткам объекта.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_C7BA74AD6D"><strong>ББ - в снарядах работает как необходимый элемент отвечающий за просчет столкновений!</strong></span></div>
@@ -371,7 +369,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">На переднем плане, прах алчущего (или кланфира) у которого вытянутый ББ.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Т.е. ББ всегда вертикален и не может быть ни &quot;положен&quot; на бок, ни тем более &quot;перевернут&quot;.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Позиция и поворот ББ, для нпс и существ, всегда статичны!</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_E34FF555CA">... хотя если </span><a class="local_link" href="tes_cs_dveri_i_markery.htm"><span class="de_DF3EC12929">пошаманить с маркером дверей</span></a><span class="de_E34FF555CA">, то можно получить перевернутое существо...</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_E34FF555CA">... хотя если </span><a class="local_link" href="tes_cs_dveri_i_markery.htm"><span class="de_DF3EC12929">пошаманить с маркером дверей</span></a><span class="de_E34FF555CA">, то можно получить перевернутое, кверху тормашками, существо...</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>ББ в магических снарядах и в моделях оружия, может иметь Radius 5,5,5 или еще меньше.</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">1.0.1, или вовсе 0.0.1 и пр. т.е. нет лимита, однако габариты должны быть, иначе просто теряется смысл.</span></div>
@@ -385,21 +383,26 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Т.е. влияет положение </span><a class="local_link" href="dummy01.htm"><span class="de_AC776ED092">DUMMY01</span></a><span class="de_56F4564E24"> нод, но не наличие в оных ББ (в качестве именной ноды).</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Примечание (для существ).</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">В игре можно видеть только изменение размера ББ.<br />Поворот и смещение могут не показать никакого результата.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Поворот, ББ внутри файла существа, по видимости, не работает вовсе.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Только масштаб и смещение, последнее только косвенно.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">В игре можно увидеть только изменение размера ББ.<br />Поворот и смещение не будут </span><span class="de_7F7A9366BC">показывать видимого</span><span class="de_56F4564E24"> результата!</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Только масштаб и смещение (по оси Z).</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Т.е. если в модели существа повернуть, или подвинуть ББ, в игре он так и останется в нулевых координатах без какого-либо поворота по осям.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">И только изменение размера будет явно заметно.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Т.е. если вызвать TCB в игре, или Ф4 в редакторе, можно увидеть, что все визуальные изменения положения ББ (кроме масштаба) были игнорированы.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7F7A9366BC">Однако, это не значит, что оные не будут иметь эффекта</span><span class="de_56F4564E24">. См. далее.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Однако, изменение размеров и позиции «Bounding Box» может привести к интересным результатам!</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Если ББ меньше 25 по оси Z:</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">— в существо будет сложно попасть. </span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Стрелы пролетают насквозь, т.к. попасть&#160; в маленький ББ весьма сложно. </span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Т.к. именно он отвечает за детектирование попаданий!</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Так и попадание мечом в верхнюю часть тела, не будет причинять урона.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">— также, в некоторых случаях, такое существо может &quot;просочиться&quot; сквозь стену, или закрытую дверь.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Изменение размеров и позиции «Bounding Box» в файле, такэ будут приводить к определенным &quot;осязаемым&quot; результатам!</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Например, если ББ меньше 25 по оси Z:</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">— в существо будет очень сложно попасть. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Стрелы пролетают насквозь (видимой оболочки), а найти (стрелами), где там находится ББ довольно сложно. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Т.к. поскольку именно ББ отвечает за детектирование попаданий, а вовсе не те видимые на экране оболочки объекта!</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Так и выпад мечом в верхнюю часть тела, не будет причинять урона.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">А еще, в некоторых случаях, существо может &quot;просочиться&quot; сквозь стену, или закрытую дверь.<br />Впрочем, это скорее уже баг движка, не умеющего достаточно точно просчитать все коллизии.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Примечание.</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Здесь не совсем ясно, как учитываются некоторые ГМСТ указывающие влияние процентов корпуса объекта на расчет попадания по объекту.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Возможно уменьшение размера ББ приводит к сокращению влияния этих ГМСТ отчего удар в верхнюю часть (тела читай ББокса) не засчитывается.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><a class="local_link" href="fcombatanglez.htm"><span class="de_AC776ED092">fCombatAngleZ</span></a><span class="de_56F4564E24"> собственно возможно влияние этой переменной.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Т.е. существа (и Нпс) используют ББ в режиме Union, о чем было писано ранее, отчего возникает мысль:<br />- а не используются ли вложенные ББоксы как раз для определения верха и низа существа?</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Примечание.</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">А если видимые сетки существа убрать в </span><a class="local_link" href="nicollisionswitch.htm"><span class="de_AC776ED092">CollisionSwitch </span></a><span class="de_56F4564E24">ноду, то существо будет невозможно активировать!</span></div>
@@ -412,7 +415,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="512" height="306" class=" de_780D01ADE8" src="Pics/drex_around_bounding_box_part_2_custom_2.png"/></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6315D75228"><strong>— то, магический снаряд, будет лететь не от существа, но к нему! </strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Т.е. со спины его цели.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">При этом, и в редакторе, и в игре, ББ будет отображаться в центре существа, т.е. визуального смещения не будет заметно.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">При этом, и в редакторе, и в игре, ББ будет отображаться в центре существа, т.е. визуального смещения не будет заметно!</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Любые значения поворота, или смещения ББ в файлах существ, визуально игнорируются.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Т.е. в редакторе и в игре, ББ будет визуально всегда по центру существа.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Только изменение габаритов будет заметно.</span></div>
@@ -449,11 +452,11 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Слишком мало! Камера будет часто проваливаться.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr></table></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Также, слишком короткий ББ создаст визуальные проблемы при ходьбе по лестницам, а также другие, не значительные, но малоприятные артефакты.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Также, слишком короткий ББ создаст проблемы при ходьбе по лестницам, а также другие, не значительные, но малоприятные артефакты.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Такие как, &quot;застрявшие&quot; в стенах НПС и прочее.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Рекомендуется подбирать значения ББ в т.ч. активным игровым тестом модели существа!</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Для НПС и Игрока подобное лечиться имеющимися плагинами и МСП.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">К примеру, см. на Nexus.com - Jamming Off плагин.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Для НПС и Игрока подобное лечиться имеющимися плагинами и МСП.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">К примеру, см. на Nexus.com - Jamming Off плагин.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Примечание.</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">МСП 2.4, 2.5 версии имеет опцию исправления размера ББ для НПС.</span></div>
@@ -462,7 +465,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Для существ, атакующим выпадом вперед, или с сильным наклоном,&#160; рекомендуется выдвигать ВВ вперед.</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Иначе камера ГГ окажется внутри их оболочки.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Однако, Боунд Бокс не должен быть квадратным!</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Боунд Бокс не должен быть квадратным, но только вытянутым!</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Иначе, существо будет застревать в узких корридорах.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Все это управляется редактированием Radius-а в нифскопе.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="524" height="313" class=" de_780D01ADE8" src="Pics/drex_around_bounding_box_part_2_custom_6.png"/></div>
@@ -477,7 +480,7 @@
 </td></tr><tr style="height: 0px;">
 <td class="de_td_518" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Несколько выступающий вперед, относительно видимой сетки ББ, позволит избавиться от проваливания камеры в брюхо существа во время их атаки.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Высота ББ, может быть также меньше, чем видимая сетка.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Высота ББ, также может быть заметно меньше, чем видимая сетка.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td><td class="de_td_518" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 557px; vertical-align: top;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">С боков, ББ, наоборот полезно слегка сжать.</span></div>
@@ -491,7 +494,11 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6315D75228"><strong>Боунд Бокс работает НА другой Боунд Бокс.</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Т.е. дистанция атаки, повреждения оружием, визуальный контакт оболочек определяется его размерами.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Т.е. если у игрока слишком маленький, а у существа не достаточно большой - камера будет в брюхе. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Т.е. если ББ у игрока слишком маленький, а у существа не достаточно большой - камера будет в брюхе. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Равно и для самих существ. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Все сражения работают по методу &quot;стенка на стенку&quot;. ББ упираются друг в друга, а дальше в дело идут анимации и просчет ГМСТ.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Впрочем для существ (нпс) использующий оружие, столкновение ББ не обязательно.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Если дистанция атаки выше 3х, то удар будет прилетать много раньше, чем объекты столкнутся своими ББ друг с другом.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Взаимодействие ВВ между собой у предметов - не активно.</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Т.е. наличие </span><a class="local_link" href="rootcollisionnode.htm"><span class="de_AC776ED092">РК </span></a><span class="de_56F4564E24">и ББ в айтимах (предметах) не оказывают никакого эффекта.</span></div>

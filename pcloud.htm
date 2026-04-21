@@ -338,11 +338,14 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Pcloud</strong> — облако частиц. Понимает дефлекторы и прочее.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Очень эффективен при создании </span><a class="local_link" href="particles_ray_trasing_and_reflection_effects.htm"><span class="de_AC776ED092">эффекта луча света!</span></a></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Только этот объект, может заполнять значения Start Random в </span><a class="local_link" href="niparticlesystemcontroller.htm"><span class="de_AC776ED092">контроллерах</span></a><span class="de_56F4564E24"> анимации частиц.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Определяется параметром Display Icon.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Основное отличие от всех других систем частиц, это активное значение Зоны генерации частиц.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Т.е. только этот объект, может заполнять значения Start Random в </span><a class="local_link" href="niparticlesystemcontroller.htm"><span class="de_AC776ED092">контроллерах</span></a><span class="de_56F4564E24"> анимации частиц при экспорте из 3д МАХ.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Размер зоны, определяется параметром Display Icon.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Все прочие системы частиц оставят это поле пустым. </span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Значение Start Random отвечает за область генерации частиц (ZXY).</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Однако, задать область можно в нифскопе.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Управлять областью, с легкостью, можно и в нифскопе. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Т.е. в нифскопе уже не имеет значение какая именно система частиц была в 3д МАХ, т.к. он видит общий для всех частиц контроллер, со всеми вытекающими отсюда последствиями, такими как, изменение любых параметров оного.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Если (PCloud) имеет физический объект в качестве эмиттера, то перестает проигрывать анимацию.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Получаются такие знаменитые Облака, или сгустки статичного тумана</span><span class="de_56F4564E24">.</span></div>
@@ -360,18 +363,19 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Если время рождения частиц ниже нуля, а конец в нулевом значении (по нифскопу) то, получается полностью статичное облако.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Никакого движения частиц. </span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Если, конечно, оно не было упаковано в </span><a class="local_link" href="nibsanimationnode.htm"><span class="de_AC776ED092">анимированную ноду.</span></a></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">При условии что скорость также равна нулю.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">При условии, что скорость также равна нулю.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Если имеет внешний эмитер, старается принять его длину.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Можно отменить, установив &quot;Box Emitter&quot;.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Если не имеет — можно настроить Область генерации частиц</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Если частиц много — просаживает фпс.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Впрочем, здесь оказывает влияние еще и </span><a class="local_link" href="nialphaproperty_favorites_flag.htm"><span class="de_AC776ED092">флаг альфы.</span></a></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Размер «области» генерации задается в Display Icon. </span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Скорость и вариации — лучше держать по минималке.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Скорость и вариации — лучше держать по минимуму.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">На что и расчет, чем меньше скорость, тем Эпичнее клубится туман.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Либо вовсе на нулях, что полезно при создании эффектов света.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Либо вовсе на нулях, что полезно при создании </span><a class="local_link" href="particles_ray_trasing_and_reflection_effects.htm"><span class="de_510E46C8C2">эффектов света</span></a><span class="de_CCD88D350B">.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Т.е. скорости может и не быть, как это назначено по умолчанию!</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Смещение частиц лучше делать посредством гравитации, чем изменением их скорости.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
@@ -387,6 +391,9 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Т.е. в niParticlesData значения Num Vertixes будет равно нулю.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Следует всегда корректировать настройки этого контроллера перед экспортом!</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Например, повысив кол-во частиц (use rate), или сместив время их появления ниже нулевого фрейма.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Либо использовать только нифскоп для детальной и правильной настройки частиц.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Т.е. получая из 3д МАХ некую заготовку, полировать ее всеми возможностями редактора Ниф файлов, ака Нифскопа. ^-^</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><hr style="width: 100%; height: 5px; text-align: center; margin-left: auto; margin-right: auto; border:none; background-color:#0012ff; color: #0012ff; clear:none;" /></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_1036 detbl" style="width: 546px; height: 0; margin-left: 0; margin-right: auto;">
 <col style="width: 100px;" class="de_col_1_518" />

@@ -332,6 +332,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Вопрос</strong></div>
 </td><td class="de_td_853" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 853px; vertical-align: top; background-color: #deff00;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Сделал модель с полупрозрачными деталями, в 3д МАХ все выглядит нормально, но в игре они полностью не прозрачны!</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr><tr style="height: 0px;">
 <td class="de_td_100" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top; background-color: #ffa800;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Ответ</strong></div>
@@ -339,58 +340,69 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- проверьте <a class="local_link" href="nitrishapedata.htm"><span class="de_2B94C39861">triShapeData</span></a>-&gt;vertex color-&gt;уровань альфы для вертексов.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="766" height="44" class=" de_780D01ADE8" src="Pics/drex_kratkij_ehkskurs__vopros___otvet_custom.png"/></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Возможно вы применяли <a class="local_link" href="vertex_paint_.htm"><span class="de_2B94C39861">Vertex Paint</span></a> со 100% alpha. Отчего модель стала полностью непрозрачной на уровне цвета вертексов.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Возможно вы применяли <a class="local_link" href="vertex_paint_.htm"><span class="de_2B94C39861">Vertex Paint</span></a> со 100% alpha. </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Отчего модель стала полностью непрозрачной на уровне цвета вертексов.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Это полностью блокирует все прочие настройки прозрачности.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Чтобы исправить, снова примените на модель VertexPaint в настройках кисти управляйте уровнем прозрачности </div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">и обработайте участки требующие прозрачность.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Либо полностью отключить использование цвета вертексов в этом разделе.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. has vertex colors = no.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Также:<br />- проверьте наличие <a class="local_link" href="nialphaproperty.htm"><span class="de_2B94C39861">свойств альфы </span></a>в ниф файле. Если их нет, добавьте уровень прозрачности в материал.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Также:<br />- проверьте наличие <a class="local_link" href="nialphaproperty.htm"><span class="de_2B94C39861">свойств альфы </span></a>в ниф файле. Если их нет, добавьте.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- в 2д редакторе посмотрите наличие<a class="local_link" href="alpha_channel_creation_v1.htm"><span class="de_2B94C39861"> альфа канала</span></a> в текстуре.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr><tr style="height: 0px;">
 <td class="de_td_100" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top; background-color: #ffa800;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Вопрос</strong></div>
 </td><td class="de_td_853" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 853px; vertical-align: top; background-color: #deff00;" colspan = "1" rowspan = "1" >
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Как мне сделать проходимую для игрока поверхность? И сказывается ли это на работе АИ.</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Как мне сделать проходимую для игрока поверхность? </strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr><tr style="height: 0px;">
 <td class="de_td_100" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top; background-color: #ffa800;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Ответ</strong></div>
 </td><td class="de_td_853" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 853px; vertical-align: top;" colspan = "1" rowspan = "1" >
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Добавить в корень ниф файла <a class="local_link" href="nistringextradata.htm"><span class="de_2B94C39861">NiStringExtraData</span></a> со значением NCO.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Это полностью отключит просчет коллизий.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Модель свободно выделяется в редакторе, но в почти полностью не осязаема для игрока (и прочих).</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Добавить в корень ниф файла </strong><a class="local_link" href="nistringextradata.htm"><span class="de_2B94C39861"><strong>NiStringExtraData</strong></span></a><strong> со значением NC.</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Это полностью отключит просчет коллизий для целевого объекта.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Модель свободно выделяется в редакторе, но в игре не осязаема для игрока (и прочих).</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Единственный момент, что следует учитывать:</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- снаряды будут взрываться о такую поверхность и находящиеся за ней объекты, будут не достижимы.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Впрочем, в большинстве случаев, этого и не требуется.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- Находящиеся за ней объекты, будут не достижимы для активации.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Т.е. для паутины посреди коридора, это не вызовет проблем, но если накрыть такой моделью сундук и не дать возможность игроку зайти за &quot;паутину&quot;, сундук не сможет быть активирован!</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Такая же проблема возникает у моделей травы, что можно видеть в некоторых плагинах.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Многие игровые поверхности имеют этот стринг.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Например вода вокруг храма Вивека, водопады, некоторые растения и пр.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Например вода вокруг храма Вивека, водопады, паутина, некоторые растения и пр.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">На работе АИ, по видимости, это не сказывается.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Еще варианты:</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Другой вариант;</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Преобразовать некоторые ноды объекта в <a class="local_link" href="nicollisionswitch.htm"><span class="de_2B94C39861">niCollisionSwitch</span></a>. </div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Это позволит сделать проходимыми только определенные участки объекта.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Однако, не следует превращать в КолиженСвитч корень файла.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">При этом, такой вариант оказывает более предпочтителен, т.к. не вызывает проблем с активацией предметов находящихся сзади видимой поверхности. Равно и снаряды будут свободно пролетать сквозь такую поверхность.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Однако, здесь (скорее всего) потребуется добавление <a class="local_link" href="dobavlenie_editormarker.htm"><span class="de_2B94C39861">Маркер</span></a>а.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Иначе, объект состоящий из одних КолиженСвитч нод, не возможно подцепить в редакторе.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Это позволит сделать проходимыми как определенные участки объекта, так и весь объект.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Однако, не следует превращать в КолиженСвитч корень файла!</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Иначе, объект состоящий из одних КолиженСвитч нод, станет не возможным подцепить в редакторе.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Другой вариант; создать в 3д редакторе упрощенную версию объекта имеющую проходы в своей поверхности.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Затем преобразовать этот объект в <a class="local_link" href="rootcollisionnode.htm"><span class="de_2B94C39861">RootCollisionNode</span></a>, что позволит более точно определить проходимые участки.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Видимые области можно дополнительно упаковать в <a class="local_link" href="nicollisionswitch.htm"><span class="de_2B94C39861">niCollisionSwitch</span></a><span class="de_51752156DC"> ноды.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Никаких стрингов экстра даты добавлять не требуется.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Вариант с использование КолизионСвитч ноды, оказывает более предпочтителен.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.к. не вызывает проблем с активацией предметов находящихся сразу за видимой поверхностью.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Равно и снаряды будут свободно пролетать сквозь такой объект.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Также, можно создать, просто пустую РК (флаг 3).</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Вовсе лишенную вложенных шейпов.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Для удобства работы в редакторе, следует добавить <a class="local_link" href="dobavlenie_editormarker.htm"><span class="de_2B94C39861">Маркер</span></a>.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Другой вариант;</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Создать в 3д редакторе упрощенную версию объекта имеющую проходы в своей поверхности.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Это позволит более точно определить проходимые участки</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Затем преобразовать объект в <a class="local_link" href="rootcollisionnode.htm"><span class="de_2B94C39861">RootCollisionNode</span></a>.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Видимые области можно дополнительно упаковать в </span><a class="local_link" href="nicollisionswitch.htm"><span class="de_0F609BFBFC">niCollisionSwitch</span></a><span class="de_DBF328B893"> ноды.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_DBF328B893">Никаких стрингов экстра даты добавлять не требуется.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Другой вариант;</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">В файле, можно создать, просто пустую РК (флаг 3).</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Т.е. вовсе лишенную вложенных шейпов.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Как ни странно, но этот вариант может оказаться самым простым.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="490" height="82" class=" de_780D01ADE8" src="Pics/drex_kratkij_ehkskurs__vopros___otvet_custom_2.png"/></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Не требуется прописывать экстрадаты, или создавать специфические ноды.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Еще способ:</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC"><strong>Еще способ:</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">См.</span><a class="local_link" href="collision_detection_rcnode_flags_test.htm"><span class="de_2B94C39861"> здесь.</span></a></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Т.е. включить на объекта использование прокси геометрии.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Но это самое &quot;экстремальное&quot; и не практичное.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr></table></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_953 detbl" style="width: 953px; height: 26; margin-left: 0; margin-right: auto;">
@@ -400,42 +412,27 @@
 <td class="de_td_100" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top; background-color: #ffa800;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Вопрос</strong></div>
 </td><td class="de_td_853" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 853px; vertical-align: top; background-color: #deff00;" colspan = "1" rowspan = "1" >
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Как мне добавить текстуру Бампа в модель.</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Как добавить текстуру Бампа в модель.</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr><tr style="height: 26px;">
 <td class="de_td_100" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top; background-color: #ffa800;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Ответ</strong></div>
 </td><td class="de_td_853" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 853px; vertical-align: top;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">См. <a class="local_link" href="bump.htm"><span class="de_2B94C39861">здесь</span></a>.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Добавляется также, как и прочие текстуры.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr><tr style="height: 0px;">
 <td class="de_td_100" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top; background-color: #ffa800;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Вопрос.</strong></div>
 </td><td class="de_td_853" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 853px; vertical-align: top; background-color: #deff00;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Как оптимизировать модель.</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr><tr style="height: 0px;">
 <td class="de_td_100" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top; background-color: #ffa800;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Ответ</strong></div>
 </td><td class="de_td_853" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 853px; vertical-align: top;" colspan = "1" rowspan = "1" >
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">1. зайти в меню <a class="local_link" href="nifskope_spell.htm"><span class="de_2B94C39861">Spell-</span></a>&gt;Optimize-&gt;Combine Properties.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Это удалит все повторяющиеся свойства материалов и текстур.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Это действие следует проводить всегда в финале полировки модели.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Не следует делать это в начале доработки ниф файла, но только после завершения всех прочих действий, если таковые конечно имели место быть.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">2. если этого недостаточно, можно попробовать объединить несколько шейпов в один.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Работает только в случае одинаковой текстуры, по каким-то причинам разделенной на несколько шейпов.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Для этого в ручную прописать одинаковые текстурные и материальные свойства объединяемым шейпам.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Также проверить наличие Has Vertex Color в<a class="local_link" href="nitrishapedata.htm"><span class="de_2B94C39861"> triShapeData</span></a> - в обоих случаях должно быть NO.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Шейпы должны находится в одной ноде!</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">ПКМ по этой ноде и <a class="local_link" href="nifskope_optimize.htm"><span class="de_2B94C39861">Combine Shapes</span></a> - это соединит несколько шейпов в один.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_DBF328B893">*обратите внимание, для нифскопа 1.1.3 опция комбинирования шейпов не работает на корневой ноде.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_DBF328B893">*также не следует соединять сильно полигональные поверхности. Лимит на один шейп 65к треугольноков.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_DBF328B893">*если у одного шейпа, в шейпдате есть настройки цвета вертексов, а у другого нет, то слияния шейпов не произойдет! Has Vertex color должен быть равен для всех шейпдат. Либо Yes, либо No.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">3. можно сократить кол-во нод, если это возможно для конкретного файла.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">См. <a class="local_link" href="ob_optimizatsiyakh_nif_fajlov.htm"><span class="de_2B94C39861">здесь.</span></a></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_DBF328B893">Также, существует утилита</span><a class="local_link" href="sniff.htm"><span class="de_0F609BFBFC"> Sniff</span></a><span class="de_DBF328B893">.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_DBF328B893">Которая позволяет, как пакетно, так и по штучно, проводить различного рода оптимизации ниф файлов.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_DBF328B893">Т.е. для обновления массива файлов, это просто не заменимая вещь!</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr></table></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_953 detbl" style="width: 953px; height: 26; margin-left: 0; margin-right: auto;">
@@ -447,6 +444,7 @@
 </td><td class="de_td_853" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 853px; vertical-align: top; background-color: #deff00;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Объект (существо, или доспехи) имеют очень большую дистанцию активации. </strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Название появляется за несколько &quot;метров&quot;.</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr><tr style="height: 26px;">
 <td class="de_td_100" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top; background-color: #ffa800;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Ответ</strong></div>
@@ -454,7 +452,8 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- Возможно у объекта нет <a class="local_link" href="bounding_box.htm"><span class="de_2B94C39861">Боунд Бокс</span></a>а, либо он слишком большой.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Следует уменьшить размер ББ, либо добавить оный. Это касается только существ.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- Вероятно проблема в <a class="local_link" href="niskininstance.htm"><span class="de_2B94C39861">скининге</span></a>, слишком большие радиусы Bounding Sphere Radius. </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- Если проблема с доспехами, то вероятно, проблема в <a class="local_link" href="niskininstance.htm"><span class="de_2B94C39861">скининге</span></a>.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Слишком большие радиусы Bounding Sphere Radius. </div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Такое частенько происходит при многократном использовании <a class="local_link" href="skin_wrap.htm"><span class="de_2B94C39861">SkinWarp</span></a>a в 3д МАХе.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Следует зайти в настройки <a class="local_link" href="niskindata.htm"><span class="de_2B94C39861">SkinData</span></a>-&gt;Bone List-&gt;Bounding Sphere Radius-&gt; установить меньшее значение. </div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Это касается брони (одежды в целом) и существ.<br /> Помогает не всегда, но как вариант.</div>
@@ -490,15 +489,18 @@
 <td class="de_td_100" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top; background-color: #ffa800;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Ответ</strong></div>
 </td><td class="de_td_853" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 853px; vertical-align: top;" colspan = "1" rowspan = "1" >
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Слишком много костей воздейтсвует на один вертекс + влияние развертки текстуры.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Слишком много костей воздействует на один вертекс + влияние развертки текстуры.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Либо значения веса костей на вертексах вышли за придел минимально допустимого значения понимаемого игрой.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">В основном, влияет развертка, т.е. щели возникают<span class="de_51752156DC"> только</span> в местах швов развертки.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Если модель не имеет развертки вовсе, то щелей не возникает вовсе.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">В основном на возникновение проблемы, влияет текстурная развертка.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. <span class="de_752695828C">щели возникают только в местах швов развертки.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Если модель не имеет развертки вовсе, то щелей не возникает вовсе.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Также, в известной мере, чем больше полигонов, тем выше шанс поймать &quot;щели&quot;.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><a class="local_link" href="o_shchelyakh_v_obolochke_.htm"><span class="de_2B94C39861">1. Исправьте скиннинг!</span></a></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Сократите кол-во костей на вертекс до 4х.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Либо увеличьте значения веса для двух основных костей. Это должно помочь сократить размер щелей.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Либо увеличьте значения веса для двух основных костей в проблемной области. </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">По крайней мере, это должно помочь сократить размер щелей.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Обязательно проверьте кол-во синих вертексов!</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Как правило после<a class="local_link" href="skin_wrap.htm"><span class="de_2B94C39861"> SkinWarp</span></a>a с большим значением Warpinga - модель обрастает ими как грязью.</div>
@@ -510,8 +512,11 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. переместите острова так, чтобы швы приходились на наименее гибкие места сетки.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. там где наименьшее кол-во костей влияет на вертексы.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_DBF328B893">Есть информация, что новые сборки </span><a class="local_link" href="morrowind_script_extender_mwse.htm"><span class="de_0F609BFBFC">МВСЕ</span></a><span class="de_DBF328B893"> от 2024го, могли поправить это безобразие.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_DBF328B893">Т.е. установите МВСЕ, которое автоматически пропатчит игру во время сеанса.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">3. используйте МВСЕ старше 2024го.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Для активации патча:</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">- установите на все шейпы, проблемной модели, флаг 512 (вместо 0, 2, 8 или что там стояло).</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Это устранит проблему щелей, без необходимости доработки модели.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_DBF328B893">ОпенМв, вроде бы, вовсе не имеет этой проблемы.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr><tr style="height: 0px;">
 <td class="de_td_100" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top; background-color: #ffa800;" colspan = "1" rowspan = "1" >
@@ -519,11 +524,12 @@
 </td><td class="de_td_853" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 853px; vertical-align: top; background-color: #deff00;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Некоторый небольшой объект исчезает на краю экрана! Когда он должен быть еще виден.</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Когда близко подхожу к объекту на нем начинают появляться &quot;дыры&quot; словно камера попала во внутрь.</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr><tr style="height: 0px;">
 <td class="de_td_100" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top; background-color: #ffa800;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td><td class="de_td_853" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 853px; vertical-align: top;" colspan = "1" rowspan = "1" >
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Ошибка связаная со слишком большим<a class="local_link" href="nifskope_mesh.htm"><span class="de_2B94C39861"> радиусом объекта</span></a>.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Проблема связана с<a class="local_link" href="nifskope_mesh.htm"><span class="de_2B94C39861">&#160; радиусом объекта</span></a>.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">В нифскопе пройтись по всем <a class="local_link" href="nitrishapedata.htm"><span class="de_2B94C39861">niTriShapeData</span></a> и сделать<a class="local_link" href="nifskope_favorite_commands.htm"><span class="de_2B94C39861"> Update Centre Radius</span></a>.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Если значение значительно изменилось, вероятность того, что проблемы была здесь весьма высока.</div>
@@ -547,26 +553,28 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Вопрос</strong></div>
 </td><td class="de_td_853" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 853px; vertical-align: top; background-color: #deff00;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Как скрыть элемент ниф файла.</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr><tr style="height: 26px;">
 <td class="de_td_100" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top; background-color: #ffa800;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Ответ</strong></div>
 </td><td class="de_td_853" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 853px; vertical-align: top;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Поставить <a class="local_link" href="nifskope_flags.htm"><span class="de_2B94C39861">флаг Hidden</span></a> в настройках шейпа, или ноды.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Как вариант, сменить номер флага на нечетный.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Как вариант, сразу сменить номер флага на нечетный.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">2-&gt;3</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">42-&gt;43</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">8-&gt;7</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. нечетный флаг всегда скрывает шейп, или ноду.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. нечетный флаг всегда скрывает шейп, или ноду и вызывать меню флага по ПКМ, не обязательно.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Обратите внимание, скрытая нода, всегда будет скрывать и все вложенные в нее объекты.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Ели речь идет о создании управляемой анимации, то воспользуйтесь </span><a class="local_link" href="niviscontroller.htm"><span class="de_2B94C39861">niViscontroller</span></a><span class="de_51752156DC">-ом.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Ели речь идет о создании управляемой анимации, то воспользуйтесь </span><a class="local_link" href="niviscontroller.htm"><span class="de_2B94C39861">niViscontroller</span></a><span class="de_51752156DC">, либо</span><a class="local_link" href="nialphacontroller.htm"><span class="de_2B94C39861"> альфа-контроллер</span></a><span class="de_51752156DC">.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr><tr style="height: 0px;">
 <td class="de_td_100" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top; background-color: #ffa800;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Вопрос</strong></div>
 </td><td class="de_td_853" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 853px; vertical-align: top; background-color: #deff00;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Как плавно скрыть частицы</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr><tr style="height: 0px;">
 <td class="de_td_100" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top; background-color: #ffa800;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Ответ</strong></div>
@@ -579,16 +587,17 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Стоит еще обратить внимание на:</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- если частицы используют в качестве эмиттера <a class="local_link" href="nibsparraycontroller.htm"><span class="de_2B94C39861">поверхность шейпа,</span></a> то контроллер невидимости должен размещаться на родительской ноде (для этого шейпа).</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Если разместить его прямо на шейп, это не приведет к желаемому результату.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. должна использоваться только нода!</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. должна использоваться только нода в которой находится шейп эмиттинга частиц!</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- за &quot;затухание&quot; ака изменения размера частиц отвечает<a class="local_link" href="niparticlegrowfade.htm"><span class="de_2B94C39861"> GrowFade</span></a> модификатор.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. если речь идет плавном затухании, то имеет смысл посмотреть в эту сторону.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. если речь идет о простом плавном уменьшении размера частиц, то имеет смысл посмотреть в эту сторону.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr><tr style="height: 0px;">
 <td class="de_td_100" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top; background-color: #ffa800;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Вопрос</strong></div>
 </td><td class="de_td_853" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 853px; vertical-align: top; background-color: #deff00;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Как добавлять, или исправлять уже имеющиеся скелетные анимации (существ, активаторов, нпс)</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr><tr style="height: 0px;">
 <td class="de_td_100" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top; background-color: #ffa800;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Ответ</strong></div>
@@ -609,6 +618,8 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Также ограничено можно использовать <a class="local_link" href="animation_kit.htm"><span class="de_2B94C39861">АнимКИт</span></a> для извлечения некоторых анимаций существ и назначения оных в качестве <a class="local_link" href="make_additional_anim_to_npc.htm"><span class="de_2B94C39861">дополнительных НПС</span></a>ам.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. для грамотного и полноценного обновления существующих анимаций, придется использовать полноценный 3д редактор, куда импортировать целевой объект и его анимации.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr></table></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_953 detbl" style="width: 953px; height: 26; margin-left: 0; margin-right: auto;">
 <col style="width: 100px;" class="de_col_1_100" />
@@ -619,21 +630,22 @@
 </td><td class="de_td_853" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 853px; vertical-align: top; background-color: #deff00;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>В сцене есть </strong><a class="local_link" href="niflipcontroller.htm"><span class="de_2B94C39861"><strong>флип контроллер</strong></span></a><strong>, настроено все правильно, но в игре заметно подергивание кадров.</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Анимация не выглядит зацикленной, хотя в нифскопе все нормально.</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr><tr style="height: 26px;">
 <td class="de_td_100" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top; background-color: #ffa800;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Ответ</strong></div>
 </td><td class="de_td_853" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 853px; vertical-align: top;" colspan = "1" rowspan = "1" >
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Проверяйте время завершения (Stop Time) <strong>у всех контроллеров в сцене.</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Проверяйте время завершения (Stop Time) <strong>у всех контроллеров в файле.</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Оно должно быть одинаковым.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Также, проверьте ключи в<a class="local_link" href="nikeyframedata.htm"><span class="de_2B94C39861"> data</span></a> контроллеров.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Если в сцене есть <a class="local_link" href="niparticle.htm"><span class="de_2B94C39861">частицы</span></a>, обратите внимание на время их жизни.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Оно не должно быть короче, чем анимации флип контроллера.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Обычно проблема как-раз в этом, частицы исчезают раньше, чем успевает проиграться вся анимация текстур.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Обычно проблема как раз в этом, частицы исчезают раньше, чем успевает проиграться вся анимация текстур.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">В большинстве случаев, такое происходит, при<a class="local_link" href="kopipasta_kontrollerov.htm"><span class="de_2B94C39861"> копировании контроллеров</span></a> с разным временем работы.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Примечание.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Примечание.</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Верно для любых контроллеров, не только для Flipp!</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr><tr style="height: 0px;">
@@ -641,15 +653,13 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Вопрос</strong></div>
 </td><td class="de_td_853" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 853px; vertical-align: top; background-color: #deff00;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Сделал новую модель магического щита, анимации работают нормально, но при движении щит подергивается.</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr><tr style="height: 0px;">
 <td class="de_td_100" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top; background-color: #ffa800;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Ответ</strong></div>
 </td><td class="de_td_853" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 853px; vertical-align: top;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Проверьте флаг <a class="local_link" href="nibsanimationnode.htm"><span class="de_2B94C39861">анимационной ноды</span></a>!</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Оптимально будет назначение 128го флага.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Поскольку щит встраивается в структуру &quot;скелета&quot; ГГ и НПС, то он получает от них известное воздействие.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Что при использовании обычных флагов (32, 42) и приводит к некоторому рассинхрону.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr></table></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_953 detbl" style="width: 953px; height: 51; margin-left: 0; margin-right: auto;">
@@ -660,6 +670,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Вопрос</strong></div>
 </td><td class="de_td_853" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 853px; vertical-align: top; background-color: #deff00;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Сделал модель брони (скиненной) но она не отображается на игроке в игре!</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr><tr style="height: 26px;">
 <td class="de_td_100" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top; background-color: #ffa800;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Ответ</strong></div>
@@ -671,11 +682,14 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- Проверьте имя корня файла и корня скелета. Обязательно должно быть, как<a class="local_link" href="bip01.htm"><span class="de_2B94C39861"> BIP01</span></a>.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- Удалите все лишние ноды. Т.е. шейпы брони (одежды) могут размещаться в файле без дополнительных нод.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Подробно, см. <a class="local_link" href="chest_etc_around_body_parts.htm"><span class="de_2B94C39861">здесь</span></a>.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr><tr style="height: 0px;">
 <td class="de_td_100" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top; background-color: #ffa800;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Вопрос</strong></div>
 </td><td class="de_td_853" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 853px; vertical-align: top; background-color: #deff00;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC"><strong>Создал анимацию</strong></span><a class="local_link" href="niuvcontroller.htm"><span class="de_2B94C39861"><strong> смещения развертки</strong></span></a><span class="de_51752156DC"><strong> на существе, в нифскопе все ок, но в игре не работает.</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr><tr style="height: 0px;">
 <td class="de_td_100" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top; background-color: #ffa800;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Ответ</strong></div>
@@ -719,7 +733,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">и бамп в идеале повторяющийся бесшовный, то выходят любопытные эффекты</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Возможно, что это уже всё известно</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Насчёт пробелов, можно задавать значения от 0 до 1, это приводит к более гладкому рисунку рефлекта по поверхности бампа. </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Насчёт пробелов, можно задавать значения от 0 до 1, это приводит к более гладкому рисунку <a class="local_link" href="effect_environment_map.htm"><span class="de_2B94C39861">рефлекта</span></a> по поверхности бампа. </div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">У Карпа в его улучшенных призванных доспехах значения матрицы бампа на щите 0,1, 0,1, 0,1, 0,1. И он использует базовую текстуру щита в слоте бампа</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr><tr style="height: 26px;">
@@ -730,13 +744,16 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Мы рады, что наш скромный труд помог Вам достичь поставленного результата и, надеемся поможет в достижении прочих намеченных целей!</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Касательно Вашего Достойного вопроса, позвольте предложить Вам следующие размышления:</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- для движения двух карт разными ЮВ контроллерами нужно МВСЕ и менять настройки слотов.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. с мвсе (теоретически) сами не проверяли можно в настройках <a class="local_link" href="niuvcontroller.htm"><span class="de_2B94C39861">ЮВконтроллера</span></a> менять слот воздействия.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. с мвсе (теоретически сами не проверяли) можно в настройках <a class="local_link" href="niuvcontroller.htm"><span class="de_2B94C39861">ЮВконтроллера</span></a> менять слот воздействия.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">И тогда, добавив 2 контроллера на один шейп, можно воздействовать на несколько слотов сразу.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- если контроллер один и чистая ванила без МВСЕ то да, воздействие определяется слотом ЮВ (в настройках текстуры и контроллера).</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- там описан метод &quot;инверсии детайл текстуры&quot;. Т.е. серая на базовый, базовая на детайл. Две текстуры. Серая гасит насыщенность базовой которая помещена на слот детайл карты.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- это для сохранения насыщенности цвета основног фона, чтобы он был и не был пережаренным.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- результат в т.ч. зависит от текстуры на Глоу и прочих слотах. Т.е. в заметках показа вариант с Глоу картой с точечной текстурой, т.е. там звездочка а все остальное черный фон. При использовании других тектур результат будет зависеть от их вида в т.ч.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">если нужна только Глоу, то да, на базовую можно использовать чистый черный фон, т.к. Глоу все на себя возьмет.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- если контроллер один и чистая Ваниль без МВСЕ то да, воздействие определяется слотом ЮВ (в настройках текстуры и контроллера).</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- в упомянутой Вами статье, описан метод &quot;инверсии<a class="local_link" href="detail.htm"><span class="de_2B94C39861"> детайл</span></a> текстуры&quot;. </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. серая на базовый, базовая на детайл. Две текстуры. </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Серая гасит насыщенность базовой которая помещена на слот детайл карты.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- это для сохранения насыщенности цвета основного фона, чтобы он был и не был пережаренным.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- результат в т.ч. зависит от текстуры на Глоу и прочих слотах.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. в заметках показа вариант с Глоу картой с точечной текстурой ака &quot;звездочка&quot; в центре, все остальное - черный фон. При использовании других тектур результат будет зависеть от их вида в т.ч.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Если же нужна только Глоу, то да, на базовую можно использовать чистый черный фон, т.к. Глоу все на себя возьмет.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr><tr style="height: 0px;">
 <td class="de_td_100" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top; background-color: #ffa800;" colspan = "1" rowspan = "1" >

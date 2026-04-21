@@ -334,7 +334,32 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Значение <strong>по умолчанию: 0.25 </strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Код OpenMW:</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Работает от обратного.</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Больше - хуже, меньше лучше.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AF7A823B3B"><strong>- сокращение, до 0.000Х,</strong></span><span class="de_3AA68BC06B"><strong> повышает</strong></span><span class="de_AF7A823B3B"><strong> эффективность (любой) брони!</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_752695828C">- увеличение значение, наоборот, </span><span class="de_928F59C56B"><strong>повышает</strong></span><span class="de_752695828C"> получаемый урон сообразно рейтингу брони!</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. чем выше рейтинг (АР) брони персонажа и выше значение этого ГМСТ, тем сильнее будет урон по здоровью!</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Броня начинает работать в обратную сторону, так сказать, не понижая, но повышая входящий урон.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Персонаж с АР 3000 при значении fCombatArmorMinMult 1.0000 потеряет до 90% здоровья, даже от оружия с низким уроном!</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Но если fCombatArmorMinMult 0.0001 при АР 3000 (и выше)(чем выше тем лучше) то урон на здоровье будет исчисляться долями процента!</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Даже если урон наносится оружием с уроном 255-255 и силой атакующего свыше 10000!</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Равно и обратное, если fCombatArmorMinMult 1000.00000 и АР 6500000 - то даже минимальный урон снимет несколько десятков тысяч здоровья!</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Примечание.</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Означенное верно для ВСЕХ носителей брони! </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Что для Игрока, что для НПС.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Хотя не ясно, работает ли это для существ, если оным выставить высокий ArmorRaiting через действие скриптов.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Но, если на неписе эффективная броня с высоким АР + хорошие навыки ношения оной, то урон будет значительно сокращен.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Это же верно и для игрока.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Слабые атаки наносят крайне незначительный урон!</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Хотя, атаки &quot;тяжелым&quot; оружием (любым, включая дистанционные) причиняют соответствующий ущерб. </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Проще говоря, заковырять носителя эбонита хитиновым кинжалом будет весьма затруднительно.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">*т.к. урон будет не Х.0, но 0.Х.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">*персонажи с высокими навыками ношения брони и подобающими латами, становятся крайне живучи!</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Код OpenMW:</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Physical damage applied to a target actor</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
@@ -350,25 +375,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">armour = weighted selection from actor armour slots</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">if armour is equipped there, armour loses z condition</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">if actor is player: player exercises relevant armour skill for armour</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C"><strong>Примечание.</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">сокращение до 0.000Х повышает эффективность (любой) брони!</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">увеличение 1.0000 повышает урон сообразно рейтингу брони.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Чем выше рейтинг (АР) тем сильнее будет урон.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Персонаж с АР 3000 при 1.0000 потеряет до 90% здоровья!</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Но если 0.0001 и АР 3000 (и выше)(чем выше тем лучше) то урон на здоровья будет исчисляться долями процента!</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Даже если урон наносить оружием с 255-255 и силой атакующего выше 1000!</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Равно, если 1000.00000 и АР 6500000 - то даже небольшой урон снимет несколько тысяч здоровья!</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C"><strong>Примечание.</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Получаемый урон для ВСЕХ носителей брони! Т. е. если на персонаже тяжелая броня и высокие</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">навыки ношения оной, то урон может сократиться до 0-1 ед, если он был атакован легким</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">оружием. Тоже и для игрока. Однако, атаки тяжелым оружием (любым, включая</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">дистанционные) причиняют соответствующий ущерб. Проще говоря, заковырять носителя</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">эбонита хитиновым кинжалом будет весьма затруднительно.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">*точнее урон будет не Х.0, но 0.Х.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">*персонажи с высокими навыками ношения брони и подобающими латами, становятся крайне</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">живучи!</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><hr style="width: 100%; height: 4px; text-align: center; margin-left: auto; margin-right: auto; border:none; background-color:#0012ff; color: #0012ff; clear:none;" /></div>
 </div>                                    			
                 			</div>
 </body>

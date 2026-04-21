@@ -342,17 +342,19 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Примечание.</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">В случае, если материалом был назначен</span><a class="local_link" href="tesexporter_tes_shader.htm"><span class="de_AC776ED092"> ТЕСшейдер</span></a><span class="de_56F4564E24">.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Был отмечен баг, при вызове редактора кривых и попытке зайти в Shader basic Parametrs — следовал краш 3д макса.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Был отмечен баг, при вызове редактора кривых и попытке зайти в Shader basic Parameters — следовал краш 3д макса.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">В случае блинна и прочих, все нормально заходится и редактируется.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><a class="local_link" href="netimmerseshader.htm"><span class="de_510E46C8C2">Нифшейдер </span></a><span class="de_CCD88D350B">не имеет такой проблемы.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">При использовании тесшейдера придется забыть о редакторе кривых.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Либо пользовать иной материал, редактируя слот Self-illumination. </span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Впрочем, для мерцающих предметов, можно обойтись и без редактора кривых.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">А равно, всегда можно п</span><a class="local_link" href="nimaterialcolorcontroller_how_to_add_via_nf.htm"><span class="de_AC776ED092">ошаманить через нифскоп</span></a><span class="de_56F4564E24">.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Использование.</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">1. &#160; &#160; вызвать редактор материалов и включить запись «авто кей».</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">2. &#160; &#160; Клик по цвету Emittance, либо Self-illumination&#160; (само-светимости). В палитре отрегулировать значение цвета, ко времени. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">2. &#160; &#160; Клик по цвету Emittance, либо Self-illumination&#160; (само-светимости). </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">В палитре отрегулировать значение цвета, ко времени. </span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Если нужно, проделать это с прочими слотами.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">3. &#160; &#160; Если не тес шейдер. Вызвать редактор кривых и выставить&#160; Out-of-Range в LOOP.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">4. &#160; &#160; Также, можно похимичить с кривыми, для более интересной анимации цвета.</span></div>
@@ -362,7 +364,8 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">&#160; &#160; *Это в случае постоянной анимации для статичных объектов, разумеется.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Примечание.</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Если материал тес-шейдер (или Нифшейдер), цвета НЕ отмечаются как анимированные. Т.е. Не появляется та красная рамка.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Если для анимации цвета использовался (таки) Тес-шейдер (или Нифшейдер), цвета НЕ отмечаются как анимированные. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Т.е. Не появляется та красная рамка.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Однако, вся анимация записывается нормально.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">&#160;</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Примечание.</strong></span></div>
@@ -382,6 +385,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td><td class="de_td_518" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 483px; vertical-align: top;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">ТесШейдер, слоты цвета не выделяются, как анимированные!</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr><tr style="height: 0px;">
 <td class="de_td_518" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="512" height="384" class=" de_780D01ADE8" src="Pics/drex_animatsiya_tsveta_materiala_custom_3.png"/></div>

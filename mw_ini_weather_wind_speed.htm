@@ -367,10 +367,13 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CF136AA7C2"><strong>При высоком значении (скорости ветра), перемещение НА поверхности воды, становится фактически невозможным!</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Т.е. выше 1000. </span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">При 100 оно еще кое-как возможно, но только по вектору Восток Запад и обратно.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Юг севере и обратно, будет получать либо ускорение, либо отбрасывание! </span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Либо &quot;невидимую стену&quot;, в которую упрется Игрок. </span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Это зависит от силы ветра и, двух ГМСТ! </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">При 100 оно еще кое-как возможно, но только по вектору;</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Восток Запад и обратно.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Либо, Юг север и обратно.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Игрок будет получать либо ускорение, либо отбрасывание! </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Либо упрется в &quot;невидимую стену&quot;. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_DBF328B893">Все это зависит от силы ветра, здесь в Мв.ини файле и, в двух ГМСТ прописанных в движке игры!</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_DBF328B893">*Значение которых можно изменять, либо создавая esp плагин, либо на лету, в сеансе игры скриптами через МВСЕ. </span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><br /><span class="de_CF136AA7C2"><strong>Смещение происходит всегда в одном направлении!</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">С глобального Юга (низа) карты, на север.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">При этом. положение относительно центра карты, роли не играет.</span></div>
@@ -382,6 +385,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_8B7D6AF64A"><strong>Wind Speed=</strong></span><span class="de_CF136AA7C2"><strong>-</strong></span><span class="de_8B7D6AF64A"><strong>100 </strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_8B7D6AF64A"><strong>показывает изменение</strong> направление смещения!</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Т.е. в состоянии покоя игрока сносит на ЮГ (либо к КГ).</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Т.е. учитывается знак (-) перед значением силы влияния.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CF136AA7C2"><strong>Еще нюансы!</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_75D1729D2E"><strong>В виде двух ГМСТ.</strong></span></div>
@@ -390,7 +394,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC"><strong>Смотрим здесь:</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><a class="local_link" href="fstromwindspeed.htm"><span class="de_2B94C39861"><strong>fStromWindSpeed</strong></span></a><span class="de_75D1729D2E"><strong> и</strong></span><a class="local_link" href="fstromwalkmult.htm"><span class="de_2B94C39861"><strong> fStromWalkMult </strong></span></a></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CF136AA7C2"><strong>Т.е. Wind Speed - служит, лишь, отправной точкой, на которую смотрят те ГМСТ и вносят свои поправки!</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CF136AA7C2"><strong>Т.е. Wind Speed, в мв.ини файле - служит, лишь, отправной точкой, на которую смотрят те ГМСТ и вносят свои поправки!</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">На силу ветра (смещения) и на ускорение. Как в простое (на воде) так и в движении по суше (воздуху)!</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Чем радикальнее значения этих ГМСТ, тем сильнее это будет заметно!</strong></div>
@@ -398,12 +402,13 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Все подвижные объекты получат бусты скорости согласно вектору ветра в МВ.ини.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_7B3FB8C726">(и в настройках этих ГМСТ! где также можно указать отрицательное значение!)</span>.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Либо (персонажи) получат отброс (замедление) обратно вектору своего движения.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. в случае высоких значений fStromWalkMult объекты, будут, либо ускоряться, либо замедляться.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. в случае высоких значений fStromWalkMult объекты, будут, либо ускоряться, либо критически замедляться.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Вплоть до получения эффекта &quot;стеклянной стены&quot;, когда движение против ветра, становится невозможным вовсе.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Либо еще &quot;лучше&quot;, все существа будет отбрасывать по направлению ветра, в не зависимости от направления их движения!</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Что по ветру, что против, что по касательной = полет с ускорением в поисках Глаза Аргонии за приделами Обливиона! </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Либо еще &quot;лучше&quot;, все существа (нпс) будут отброшены по направлению ветра, в не зависимости от направления их движения!</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Что по ветру, что против, что по касательной = полет с ускорением в поисках Глаза Аргонии за приделами Обливиона гарантирован! </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Т.е. все &quot;живые&quot; объекты улетят к ближайшей стене (склон горы, либо строение) где и застрянут, либо, вовсе улетят под текстуры земли купаться в мировых водах, где, впрочем, также получат &quot;пинка&quot; и полетят за край бытия (ака карты).</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Скорость ветра и ГМСТ не влияют на подводные объекты.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Скорость ветра, в мв.ини файле и ГМСТ не влияют на подводные объекты.</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. находясь под водой, игрок не встречает сопротивления и не получает ускорения.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_75D1729D2E"><strong>Значение Wind Speed= ниже 0.0 никак и ни на что не влияет.</strong></span></div>
@@ -422,13 +427,18 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">- скорость ветра, здесь, в ИНИ файле, служит базовым значением для тех ГМСТ.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">- влияние скорость ветра и ГМСТ легко можно видеть в зонах с разной погодой (силой ветра).</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">- чем wind speed выше тем сильнее влияние.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">- при низкой скорости ветра &quot;радикальные&quot; значения ГМСТ, будут оказывать влияние. Т.е. можно играть, как силой ветра, так и ГМСТ.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">- при низкой скорости ветра (в мв.ини) &quot;радикальные&quot; значения ГМСТ, будут оказывать влияние. Т.е. можно играть, как силой ветра, так и ГМСТ.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">- wind speed влияет на смещение объектов на поверхности воды в состояния их покоя. Придавая им смещение по глобальным координатам мира.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">- Wind speed отвечает за включения анимации закрытия лица рукой, а также, при смене вектора, сторону поворота корпуса, когда (нпс, игрок) начнут использовать эту анимацию.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Т.е. стоя спиной к направлению ветра, анимация не проигрывается.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Анимация включается в зоне (примерно) 75* по направлению ветра.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Т.е. если игрок начал поворачиваться к ветру, то рука пойдет к лицу в этой зоне.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Т.е. если игрок начал поворачиваться к направлению ветру, то рука пойдет к лицу в этой зоне.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Еще, стоит заметить, что смещение на водной поверхности присутствует и в Интерьерах!</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Вероятно по тому же принципу, смещение с юга на север.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Север ячейки можно узнать разместив в ней North Marker объект.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><hr style="width: 100%; height: 4px; text-align: center; margin-left: auto; margin-right: auto; border:none; background-color:#0012ff; color: #0012ff; clear:none;" /></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="500" height="391" class=" de_780D01ADE8" src="Pics/drex_mw_ini_weather_wind_speed_custom.png"/></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_DBF328B893">След на поверхности воды и курсор, показывают направления смещения игрока.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_DBF328B893">Которого (на всех парусах) несет за горизонт (событий).</span></div>
