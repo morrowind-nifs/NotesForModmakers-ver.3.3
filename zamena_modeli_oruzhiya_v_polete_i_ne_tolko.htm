@@ -334,7 +334,9 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Примечание.</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Равно можно заменять модели стрел в полете.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Или выключать <a class="local_link" href="dorabotka_stencil_ragnablejdnyj_privet_nerevaru.htm"><span class="de_2B94C39861">лазерные мечи</span></a> когда те выложены в мир.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Принцип везде одинаков.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Как отдельный случай, подобный вариант подойдет для анимации огня при выстреле из &quot;мушкета&quot;, или тому подобного оружия.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Принцип везде одинаков.</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Установить <a class="local_link" href="niviscontroller.htm"><span class="de_2B94C39861">контроллер невидимости</span></a> и скрыть деталь которую не нужно видеть в статичном положении.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Далее все сделает движок игры.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Когда оружие окажется в руках, или в полете.</div>
@@ -342,12 +344,14 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C"><strong>Примечание!<br /></strong></span>Возможно будет плохо работать у существ использующих свою уникальную анимацию!</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. оружие будет периодически переходить в фазу вращения раньше положенного!</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Или вовсе останется крутить в руках, когда существо &quot;забудет&quot; убрать оное и перейдет в позу простоя.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. метод завязан на анимации существа (игрока, нпс), где нулевой фрейм никогда не используется для анимации атак.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><br /><span class="de_CF136AA7C2"><strong>ВАЖНО!<br /></strong></span><span class="de_A0C1A69777"><strong>Деталь оружия в активном состоянии обязательна должна иметь флаг Hidden!</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. недостаточно только добавить контроллер невидимости, важно скрыть эту делать по умолчанию!<br />Иначе она не будет правильно работать, отображаясь при размещении оружия на земле.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. недостаточно только добавить контроллер невидимости, важно еще и скрыть эту делать по умолчанию!<br />Иначе она не будет правильно работать, отображаясь при размещении оружия на земле.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C"><strong>Упрощенная версия статьи,</strong></span><a class="local_link" href="zamena_modeli_oruzhiya_na_zemle.htm"><span class="de_0F609BFBFC"><strong> здесь</strong></span></a><span class="de_823826CA2C"><strong>.</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C"><strong>Т.е. все описания и настройки даны максимально сжато.</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C"><strong>Отдельно внимание посвящено только замене модели оружия при размещения оного в мире.</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><hr style="width: 100%; height: 5px; text-align: center; margin-left: auto; margin-right: auto; border:none; background-color:#0012ff; color: #0012ff; clear:none;" /></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>И так!</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">1. берем (например) метательную звездочку.</div>
@@ -377,8 +381,9 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC616C7C8D">Флаг можно сменить после завершения всех настроек в файле, либо использовать опцию Нифскопа Show Hidden.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CC616C7C8D">Первый шейп, который виден в мире и в руках игрока, сменит свое состояние через действие контроллера, по умолчанию он ВИДЕН!</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">3. Добавьте <a class="local_link" href="nirollcontroller.htm"><span class="de_2B94C39861">niRoll</span></a> и <a class="local_link" href="niviscontroller.htm"><span class="de_2B94C39861">niVisController-</span></a>ы с<a class="local_link" href="nifloatdata.htm"><span class="de_2B94C39861"> их</span></a> <a class="local_link" href="nivisdata.htm"><span class="de_2B94C39861">Датами</span></a>.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Первый будет вращать, второй будет скрывать.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">3. Теперь добавим анимации вращения, например <a class="local_link" href="nirollcontroller.htm"><span class="de_2B94C39861">niRoll</span></a><span class="de_51752156DC"> (можно </span><a class="local_link" href="nikeyframecontroller.htm"><span class="de_2B94C39861">кефрейм</span></a><span class="de_51752156DC">, но Ролл быстрее настраивать)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">И конечно же <a class="local_link" href="niviscontroller.htm"><span class="de_2B94C39861">niVisController</span></a>.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Первый, контроллер, будет вращать, а второй будет скрывать.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">4. Отредактируйте Roll и назначьте на второй шейп.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Хватит одного ключа в <a class="local_link" href="nifloatdata.htm"><span class="de_2B94C39861">niFloatData</span></a>.</div>
@@ -396,7 +401,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Если хотите получить &quot;бензопилу&quot;, или &quot;мистическую живую звездочку&quot; - можно ставить иные значения.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">6. Назначьте этот <a class="local_link" href="niviscontroller.htm"><span class="de_2B94C39861">niVisController</span></a> на второй шейп.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Скопируйте его и вставьте на первый шейп!</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. скопируйте его и вставьте на другой шейп!</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">В VisData инвертируйте ключи.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Time 0 = 1</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Time 0.0667 = 0</div>
@@ -407,10 +412,11 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">7. Все, не забудьте поставить флаг Hidden на второй (вращающийся в полете шейп) и сохраняйте!</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Собственно все довольно просто, путем подмены деталей модели и синхронизации с анимацией можно добиться того, чего не способен сделать движок.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Собственно все довольно просто, путем подмены деталей модели и синхронизации с анимацией, можно добиться изменения состояния объекта в покое и в активном состоянии.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Также можно подменять стрелы и болты.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">При этом, стрелам хватит и одного контроллера невидимости, т.е. заменить стрелу в луке, на что-то другое в полете.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><hr style="width: 100%; height: 4px; text-align: center; margin-left: auto; margin-right: auto; border:none; background-color:#0012ff; color: #0012ff; clear:none;" /></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Примечание.</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Вместо niRoll можно пользовать и <a class="local_link" href="nikeyframecontroller.htm"><span class="de_2B94C39861">KeyFrame</span></a>, но для этого потребуется создавать анимации в МАХе.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Также, niRoll, будучи пофреймовым контроллером, работает более плавно.</div>
@@ -418,7 +424,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Примечание.</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Однако, есть небольшое ограничение.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Слишком далеко летящие и медленные снаряды возвращаются к исходному виду.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. в какой-то момент они перестают вращаться.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. в какой-то момент они перестают вращаться, также может произойти сброс к исходному (неактивному) виду объекта.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Это не критично, но есть такой момент.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">На самом деле, надо очень постараться чтобы получить такое, но тем не менее это есть.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Связано это со временем. Если установить Time больше 7.3330 то пойдет кручение оружия в руке.</div>
@@ -426,12 +432,25 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Но это создаст не нужные сложности с заменой файла этой анимации.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">7.3330 вполне достаточно для красивого и длительного полета анимированного снаряда.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Примечание.</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">В теории, это также можно обойти!</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Для этого используем ЛОДы.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- Создайте еще одну копию &quot;вращающегося&quot; шейпа.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- Измените время вращения у этой копии на &quot;безлимитное&quot;, а также время у контроллера невидимости смените на (15.0000 - например).</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- Поместите оба анимированных шейпа в ЛОД.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- Установите смену уровней, так чтобы первый шейп был виден рядом с камерой игрока (0-2024) а второй включался (2024-8096).</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Теперь, вне зависимости от времени полета до цели, объект будет проигрывать анимации.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Хотя тут возникает вопрос, как поведет себя подобная конструкция если модель используют НПС, т.е. смена уровней будет происходить прямо обратно приближению оных к камере игрока.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Также, существует вероятность, что вторая анимированная деталь, будет появляется у лежащего на земле объекта, когда игрок отойдет от него на расстояние выше 2000х единиц. </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Впрочем, если модель не слишком большая (звездочка как здесь) это вряд ли будет сильно заметно...</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Вращающееся в полете метательное оружие можно видеть в этих плагинах:</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C"><strong>Improved Thrown Weapon Projectiles</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">https://www.nexusmods.com/morrowind/mods/44763</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C"><strong>The Symphony</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">https://www.nexusmods.com/morrowind/mods/43790</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Здесь, помимо дротиков, имеются и стрелы с болтами.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">В обоих плагинах применен обычный </span><a class="local_link" href="nikeyframecontroller.htm"><span class="de_0F609BFBFC">КейФреймКонтроллер</span></a><span class="de_823826CA2C">.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><hr style="width: 100%; height: 5px; text-align: center; margin-left: auto; margin-right: auto; border:none; background-color:#0012ff; color: #0012ff; clear:none;" /></div>
@@ -458,6 +477,7 @@
 </td></tr><tr style="height: 0px;">
 <td class="de_td_518" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><a class="local_link" href="nivisdata.htm"><span class="de_2B94C39861">И его дата.</span></a></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td><td class="de_td_518" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 451px; vertical-align: top;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><a class="local_link" href="nifloatdata.htm"><span class="de_2B94C39861">и его дата.</span></a></div>
 </td></tr></table></div>

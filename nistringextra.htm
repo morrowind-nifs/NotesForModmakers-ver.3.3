@@ -330,7 +330,7 @@
                 <div class="description_on_page"><div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="ic"><h1><strong>niStringExtra</strong></h1></div></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Дополнительные свойства ниф файлов задаваемые через текстовое описание.</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Помещаются в слот ExtraData ноды или шейпа.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Откуда могут оказывать воздействие как на конкретный шейп, так и на весь ниф файл.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Откуда могут оказывать воздействие, как на конкретный шейп, так и на весь ниф файл.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="253" height="68" class=" de_780D01ADE8" src="Pics/drex_nistringextra_custom.png"/></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
@@ -369,6 +369,8 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">В старших версиях движка, помечено, как удаленное.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Этот тип записи был найден в ниф файлах 3.0 версии в игре СтарТрек Мостик Коммандер(С)</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Еще было высказано мнение, что запись связана с работой шейдеров.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr><tr style="height: 0px;">
 <td class="de_td_194" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 165px; vertical-align: top; background-color: #bfbfbf;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><a class="local_link" href="tes3objectextradata.htm"><span class="de_AC776ED092"><strong>TES3ObjectExtraData</strong></span></a></div>
@@ -390,20 +392,24 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Равно, это работает и для <a class="local_link" href="niproperties.htm"><span class="de_2B94C39861">свойств</span></a>, <a class="local_link" href="dynamic_effects.htm"><span class="de_2B94C39861">эффектов </span></a>и <a class="local_link" href="controllers_of__animation.htm"><span class="de_2B94C39861">прочего</span></a>.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">При этом можно создавать последовательные цепочки, прописывая следующий объект в экстрадата предыдущего.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Все это отразиться в SSG!</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Работает, для всех объетов, за некоторыми редкими исключениями, которые сразу приводят к КТД.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Работает, для всех объектов, за некоторыми редкими исключениями, которые сразу приводят к КТД.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Т.е. некоторые объекты (такие как; alphaacumulator, niPixeldata и пр.) прописывать сюда нельзя.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Однако!<br /></strong>Прямой пользы от этого в игре нет. ^-^</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Объект не получает чего-то нового.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Либо может получить вылет.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Либо может получить КТД.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">И лучше не использовать корень файла для подобных тестов.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Отсюда они сбрасываются, т.е. не отображаются по SSG.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Но для вложенных нод (и шейпов) они отображаются, но не работают в игре.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. во вложенных нодах можно увидеть настройки и параметры добавленных объектов, но в игре это никак не скажется.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. во вложенных нодах можно увидеть настройки и параметры добавленных объектов, на игре это никак не скажется.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">А на корне файла они будут автоматически очищены.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Что интересно, в следующих версиях движка, раздел ExtraData корневой ноды файла, стал активно использоваться для добавления шейдерных инструкций.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Может быть, это возможно использовать в ОпМВ.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Или будут найдены &quot;секретные коды к компутеру ксеона&quot;(С) и добавленные сюда записи окажут эффект на модель в игре.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_AF7A823B3B">И еще, стоит заметить, что МВСЕ после 2021го года, вполне активно использует раздел экстра записей!</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. наконец-то стало возможным использовать этот раздел с полной отдачей!</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Хотя для этого и требуется дополнительная утилита.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Пример.</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Здесь текстурный эффект был указан в разделе экстрадата одной из нод файла, а в разделе экстрадата текстурного эффекта, были прописаны свойства тумана.</div>

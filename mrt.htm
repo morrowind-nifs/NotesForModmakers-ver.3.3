@@ -333,12 +333,14 @@
     </noscript>
                 <div class="description_on_page"><div class="p" style="text-align: center; direction: ltr; margin-left: 0px; text-indent: 0px;"><div class="ic"><h1><strong>MRT</strong></h1></div></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>movement root = MRT.</strong></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Нода, автоматически создаваемая движком для существ и НПС, т.е. только для &quot;живых&quot; объектов.</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Нода, автоматически создаваемая движком для существ и НПС.</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Т.е. только для &quot;живых&quot; объектов.</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>По видимости, используется для их передвижения.</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Вероятно, уникальное поделие беседки.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Не создается для активаторов и прочих &quot;неживых&quot; объектов.<br />Т.е. возникает только для объектов могущих &quot;самостоятельно&quot; перемещаться по миру.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">По виду, это обычная NiNode с системным именем MRT. Никаких особых свойств, или потомков.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Видна в <a class="local_link" href="ssg.htm"><span class="de_2B94C39861">SSG</span></a>. Как в редакторе, так и в игре.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">У НПС имеет в своем составе <a class="local_link" href="nikeyframecontroller.htm"><span class="de_2B94C39861">кейфрейм контроллер</span></a>.</div>
@@ -349,6 +351,9 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Кейфрейм контроллер содержит только ключи позиции.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Отчего и можно предполагать, что Нода используется для перемещении объектов в мире.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Вероятно, создаваемый на ней контроллер, является экстракцией ключей движения с корневой кости скелета базовой анимации.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Здесь стоит заметить, что раз нет ключей поворота, то можно видеть, как движок поворачивает существо.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Т.е. всем корпусом и не учитывая вращение, если таковое было прописано в кф файл.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Возможно, нода, также является неким тригером для связи всех трех (nif, xnif, kf) ниф файлов в один?</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Но скорее всего, связана только с перемещением объектов...</div>

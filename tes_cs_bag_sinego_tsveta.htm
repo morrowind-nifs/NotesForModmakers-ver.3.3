@@ -334,13 +334,13 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Отчего может происходить перекос кэша. </span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Т.е. в основном и происходит при работе из БСА файлов.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Чаще всего происходит по причине одинаковых текстур на разных слотах модели.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Чаще всего происходит по причине использования одинаковых текстур на разных слотах модели.</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. например:</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- Есть некая текстура чистого черного цвета примененная на слоте Бампа, для блокировки ползающего эффекта зачарования.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;(re901-3.dds к примеру).</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">И, эта же текстура применяется на слоте <a class="local_link" href="effect_environment_map.htm"><span class="de_2B94C39861">Рефлект,</span></a> для этих же целей, но в другой модели.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">В результате, существует весьма высока вероятность, что при встрече этих двух моделей в сцене, произойдет посинение!</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Но по отдельности, они работают исправно, что может затруднять определение причины подобного сбоя.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">И, эта же текстура применяется на слоте <a class="local_link" href="effect_environment_map.htm"><span class="de_2B94C39861">Рефлект,</span></a> но в другой модели!</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">В результате, существует весьма высокая вероятность, что при встрече этих двух моделей в сцене, произойдет посинение (одной, либо 2х сразу)!</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Хотя порознь, они работают исправно, что и может затруднять определение причины подобного сбоя.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Весьма возможно, что дело в не корректно работающем БАМПЕ, текстуры коего ВСЕГДА (должны быть) синего цвета.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">За что отвечает настройка </span><span class="de_CCD88D350B">Pixel Layout</span><span class="de_823826CA2C">&#160; </span><a class="local_link" href="nisourcetexture.htm"><span class="de_510E46C8C2">PIX_LAY_BUMPMAP</span></a><span class="de_CCD88D350B">, использующаяся только для текстур бампа.</span></div>
@@ -350,7 +350,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Также, было отмечено посинение, если карта Детализации была на слоте бампа и, на своем Слоте.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">При переходе между помещениями в которых были стены с этими настройками происходило Посинение.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Т.е. в первом помещении все ОК, но во втором стены покрывались синевой, при обратном возвращении,</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Т.е. в первом помещении все ОК, но во втором стены покрывались синевой, а при обратном возвращении,</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">стены первого помещения, также становились синими.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Лечилось, перезагрузкой игры.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">*консольная команда PT, не исправляет этот баг!</span></div>
@@ -358,13 +358,15 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Многолетний опыт использование дефолтных текстур во </span><span class="de_56F4564E24">все различных</span><span class="de_CCD88D350B"> моделях, показал, что применение одних и тех же текстур только на Базовом слоте, не приводит к конфликтам и посинению.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Вероятно проблема касается только слота Бамп и текстур использованных на нем.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B"><strong>Также, иногда, Синий цвет может возникать спонтанно от ошибок драйвера видео карты и, перекоса текстура в памяти оной. Что частенько бывало в былые времена, когда памяти на борту видеокарт было мало (256-512мб).</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B"><strong>Также, иногда, Синий цвет может возникать спонтанно от ошибок драйвера видео карты и, перекоса текстура в памяти оной. </strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B"><strong>Что частенько бывало в былые времена, когда памяти на борту видеокарт было мало (64-512мб).</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B"><strong>Для исправления, было достаточно перезагрузить игру и ПК.</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B"><strong>Решение.</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_C8F891A173"><strong>Решение.</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Если синева все-таки пришла - скопировать и переименовать текстуру со слота Рефлекта и бампа. </span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Прописать новое Иде в модель.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Например так </span>re901-3.dds -&gt;re901-3k.dds</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. всегда используйте уникальные имена текстур для слотов <a class="local_link" href="bump.htm"><span class="de_2B94C39861">Бамп</span></a> и <a class="local_link" href="sloty_teksturnykh_ehffektov.htm"><span class="de_2B94C39861">Рефлект</span></a>!</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Либо прописать на Бамп, некую иную текстуру, из &quot;Бамповых&quot;.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>

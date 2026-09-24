@@ -343,14 +343,16 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><a class="local_link" href="tesexporter.htm"><span class="de_2B94C39861"><strong>ТЕСэкспортер</strong></span></a><strong> или </strong><a class="local_link" href="ffexporter.htm"><span class="de_2B94C39861"><strong>ФФЕ.</strong></span></a></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><hr style="width: 100%; height: 5px; text-align: center; margin-left: auto; margin-right: auto; border:none; background-color:#0012ff; color: #0012ff; clear:none;" /></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC"><strong>На примере массива частиц Pcloud.</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC"><strong>Можно использовать любые другие типы частиц, но для примера воспользуемся этим.</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_DBF328B893">Можно использовать любые другие типы частиц, но для примера воспользуемся этим.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>1. Добавьте в сцену плоскость.</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Размер 256, кол-во полигонов и прочее неважно.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Разместите ее в нулевых координатах.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Плоскость может выполнять роль эмиттера, так и покажет работу эффетов.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Плоскость может выполнять роль эмиттера, так и покажет работу эффектов (освещения).</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Материал можно не назначать.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Этот момент критически важен! Наличие &quot;физического&quot; объекта совершенно необходимо! см. далее.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_1BF372DA7C">Этот момент критически важен! </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_1BF372DA7C">Наличие &quot;физического&quot; объекта совершенно необходимо для работы эффектов по частицам!</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">О чем см. далее.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC"><strong>2. Создайте</strong></span><a class="local_link" href="pcloud.htm"><span class="de_2B94C39861"><strong> Pcloud </strong></span></a><span class="de_51752156DC"><strong>и также поместите над плоскостью.</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Диаметр 256х256х256.</span></div>
@@ -376,7 +378,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Используйте (для теста) эти текстуры:</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- базовая текстура vfx_bluecloud.dds</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- дарк vfx_blueglow.dds</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">- </span><a class="local_link" href="tesexporter_tes_shader.htm"><span class="de_0F609BFBFC">глосс текстуру</span></a><span class="de_823826CA2C"> добавлять не нужно, т.к. частицы отображаются символами.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_89EAAB5A40">- </span><a class="local_link" href="tesexporter_tes_shader.htm"><span class="de_3CF7D165FD">глосс текстуру</span></a><span class="de_89EAAB5A40"> в материал, добавлять не нужно, т.к. частицы отображаются символами.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Настройки шейдинга материала см. скрин - это сразу даст <a class="local_link" href="nialphaproperty_favorites_flag.htm"><span class="de_2B94C39861">13 флаг</span></a> альфы для частиц.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_262 detbl" style="width: 100px; height: 0; margin-left: 0; margin-right: auto;">
 <col style="width: 100px;" class="de_col_1_262" />
@@ -400,6 +402,9 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC"><strong>5. Сразу после создания и размещения, создайте копию фонарика!</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Т.е. CLONE.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_DBF328B893">Второй фонарик будет создавать</span><a class="local_link" href="nitextureeffect.htm"><span class="de_0F609BFBFC"> эффект другого типа</span></a><span class="de_DBF328B893">.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Для удобства можно переименовать фонарики.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Первый - tx_effect.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Второй - la_effect</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC"><strong>6. Возвращаемся в редактор материалов.</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Добавьте на любой материала текстуру которая будет изображать из себя свет.</span></div>
@@ -413,7 +418,7 @@
 </td></tr></table></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC"><strong>7. возвращаемся к Фонарику.</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Выбираем один из двух, без разницы, теперь в настройках:</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Выбираем тот который tx_effect и в настройках оного:</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">advanced effect -&gt; projector map.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Перетащите ту текстуру из раскрытого списка MAP материала.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Просто хватайте мышью и тащите.</span></div>
@@ -424,8 +429,8 @@
 <td class="de_td_183" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="177" height="178" class=" de_780D01ADE8" src="Pics/drex_particles_ray_trasing_and_reflection_effects_custom_6.png"/></div>
 </td></tr></table></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC"><strong>Второй фонарик не трогаем!</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">Он не будет иметь текстуры и оказывает повертексное освещение модели в целом.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC"><strong>8. Выделите частицы и их плоскость.</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_51752156DC">И вызывайте: </span><span class="de_56F4564E24">includes\excludes tools. <img  alt="" style="border: solid 0px;  " width="46" height="36" class=" de_780D01ADE8" src="Pics/drex_particles_ray_trasing_and_reflection_effects_custom_7.png"/></span></div>
@@ -443,19 +448,29 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Поскольку эмиттер в Pcloud &quot;встроенный&quot;&#160; достаточно выделить только сами частицы.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Если эмиттером указан другой объект в сцене, выбираем его и частицы -&gt; Group.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Вновь, вызываем&#160; includes\excludes tools - применяем его уже на группу.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Да, стабильный результат получается, если вызвать includes\excludes 2 раза.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Сначала назначив эффекты на частицы и эмиттер, а потом и на всю группу.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Если назначить эффекты на группу сразу, может получиться, что эффект окажется только на самой группе, но не на вложенных в нее объектах.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Возможно это проблема экспортера, либо что-то еще.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Так или иначе, надежнее будет вызывать включение наложения эффектов 2 раза.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_9599D3D09C"><strong>9. Собственно это все, можно экспортировать!</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_3701424A1F">Основная &quot;плюшка&quot; это includes\excludes tools, которая позволяет назначать эффект освещения частицам.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_9599D3D09C">Экспортер корректно пропишет текстурные эффекты в ноду эмиттера и в ноду частиц.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_3701424A1F">Основная &quot;плюшка&quot; метода, это includes\excludes tools, которая позволяет назначать эффект освещения частицам.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_3701424A1F">Если ее не использовать, эффекты освещения не будут добавлены на частицы при экспорте.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_3701424A1F"><strong>А также, самое главное!</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_3701424A1F"><strong>Критичеси необходим &quot;физический&quot; объект. Т.е. нужен </strong></span><a class="local_link" href="nitrishape.htm"><span class="de_AC776ED092"><strong>шейп.</strong></span></a></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_96D6BE88DC">Т.е. нода с эмиттером должна обязательно содержать статичную поверхность.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_9599D3D09C">Собственно формально именно нода частиц получает шейп, но при экспорте, он будет выделен в ноду эмиттера.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_3701424A1F"><strong>Критичеси необходим &quot;физический&quot; объект. Ака, нужен </strong></span><a class="local_link" href="nitrishape.htm"><span class="de_AC776ED092"><strong>шейп.</strong></span></a></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_96D6BE88DC">Т.е. нода с эмиттером должна обязательно содержать статичную поверхность (шейп) на основе которого и будет проводится расчет наложения текстуры на сами частицы.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_9599D3D09C">Собственно, здесь, формально именно нода частиц получает шейп, но при экспорте, он (шейп) будет выделен (добавлен) в ноду эмиттера.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_9599D3D09C">А частицы останутся сами по себе вне всяких других нод, т.е. в корне файла.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_9599D3D09C">Также экспортер корректно пропишет текстурные эффекты в ноду эмиттера и в ноду частиц.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>10. Но давайте немного усложним сцену перед экспортом!</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Создайте примитив куб и разместите его на фонариками.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Создайте примитив куб и разместите его над фонариками.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Т.е. над их основаниями, так чтобы их точки опоры находились на кромке куба.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Для этого удобно использовать Align tool. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Создайте куб, вызовите Align и кликните по фонарику, установите точки опоры.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="35" height="46" class=" de_780D01ADE8" src="Pics/drex_particles_ray_trasing_and_reflection_effects_custom_9.png"/><span class="de_CCD88D350B"> иконка этого инструмента, да.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Далее!</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Через Select&amp;Link прикрепите фонарики к кубу.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Это позволит создать анимации движения света, как в ручном, так и в &quot;автоматическом&quot; режиме.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
@@ -468,14 +483,14 @@
 <col style="width: 192px;" class="de_col_2_262" />
 <tr style="height: 0px;">
 <td class="de_td_262" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top;" colspan = "1" rowspan = "1" >
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="256" height="275" class=" de_780D01ADE8" src="Pics/drex_particles_ray_trasing_and_reflection_effects_custom_9.png"/></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="256" height="275" class=" de_780D01ADE8" src="Pics/drex_particles_ray_trasing_and_reflection_effects_custom_10.png"/></div>
 </td><td class="de_td_262" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 192px; vertical-align: top;" colspan = "1" rowspan = "1" >
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="256" height="219" class=" de_780D01ADE8" src="Pics/drex_particles_ray_trasing_and_reflection_effects_custom_10.png"/></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="256" height="219" class=" de_780D01ADE8" src="Pics/drex_particles_ray_trasing_and_reflection_effects_custom_11.png"/></div>
 </td></tr></table></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>11. Теперь все!<br /></strong>Проводите экспорт.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="256" height="101" class=" de_780D01ADE8" src="Pics/drex_particles_ray_trasing_and_reflection_effects_custom_11.png"/></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="256" height="101" class=" de_780D01ADE8" src="Pics/drex_particles_ray_trasing_and_reflection_effects_custom_12.png"/></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>12. Откройте редактор не загружая никаких плагинов.</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Создайте новый активатор, указав получившийся Ниф файл.</span></div>
@@ -485,19 +500,24 @@
 <col style="width: 100px;" class="de_col_1_262" />
 <tr style="height: 0px;">
 <td class="de_td_262" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top;" colspan = "1" rowspan = "1" >
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="256" height="168" class=" de_780D01ADE8" src="Pics/drex_particles_ray_trasing_and_reflection_effects_custom_12.png"/></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="256" height="168" class=" de_780D01ADE8" src="Pics/drex_particles_ray_trasing_and_reflection_effects_custom_13.png"/></div>
 </td></tr></table></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Ничего примечательного, но все отображается, что и требовалось проверить.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Пока, ничего примечательного, но уже все отображается корректно, что и требовалось проверить!</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>13. Переходим в Нифскоп, для финальной полировки!</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Первым делом, если использовался </span><a class="local_link" href="tesexporter.htm"><span class="de_AC776ED092">ТЕСэкспортер</span></a><span class="de_56F4564E24">, переименуйте</span><a class="local_link" href="nibsparticlenode.htm"><span class="de_AC776ED092"> NiBSParticleNode</span></a><span class="de_56F4564E24"> в NiNode. Это важно!</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">- затем отрегулируйте </span><a class="local_link" href="nispotlight.htm"><span class="de_AC776ED092">NiSpotLight</span></a><span class="de_56F4564E24">-&gt;</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Первым делом, если использовался </span><a class="local_link" href="tesexporter.htm"><span class="de_AC776ED092">ТЕСэкспортер</span></a><span class="de_56F4564E24">, переименуйте</span><a class="local_link" href="nibsparticlenode.htm"><span class="de_AC776ED092"> NiBSParticleNode</span></a><span class="de_56F4564E24"> в NiNode. Это важно для стабильности результата (здесь)!</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">- затем отрегулируйте </span><a class="local_link" href="nispotlight.htm"><span class="de_AC776ED092">NiSpotLight</span></a><span class="de_56F4564E24"> </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">(это тот второй фонарик </span><span class="de_DBF328B893">la_effect) собственно эффект уже будет иметь это название.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">-&gt;</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Cutoff Angle = 25 </span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Exponent = 100.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">- в </span><a class="local_link" href="nitextureeffect.htm"><span class="de_AC776ED092">NiTextureEffect</span></a><span class="de_56F4564E24">-&gt;</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">(это первый фонарик с названием tx_effect)</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><a class="local_link" href="clipped_projected_textures.htm"><span class="de_AC776ED092">Clipping Plane</span></a><span class="de_56F4564E24"> = 1</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Unknown Vector = X0, Y0, Z-1. Т.е. Z = -1.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Clipping Plane</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 100px; text-indent: 0px;"><span class="de_56F4564E24">Rotation = X0, Y0, Z-1. Т.е. измените Z = -1.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Да, здесь, крайне важно включить саму плоскость отсечения и установить вектор, по какой из плоскостей оно будет работать!</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">- в </span><a class="local_link" href="niparticlesystemcontroller.htm"><span class="de_AC776ED092">NiParticleSystemController</span></a><span class="de_56F4564E24"> -&gt;</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Start Time = -5, т.е. время старта поставить в отрицательное положение.</span></div>
@@ -512,36 +532,36 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">- включение более точной локализации потока света. Через установку Exponent.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">- включение </span><a class="local_link" href="clipped_projected_textures.htm"><span class="de_AC776ED092">Плоскости Отсечения</span></a><span class="de_56F4564E24">.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">- и исправление времени появления частиц.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">К сожалению, 3д МАХ не позволяет сразу выставить эти параметры.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">К сожалению, 3д МАХ не позволяет сразу выставить эти параметры.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_786 detbl" style="width: 572px; height: 0; margin-left: 0; margin-right: auto;">
 <col style="width: 100px;" class="de_col_1_262" />
 <col style="width: 186px;" class="de_col_2_262" />
 <col style="width: 286px;" class="de_col_3_262" />
 <tr style="height: 0px;">
 <td class="de_td_262" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top;" colspan = "1" rowspan = "1" >
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="256" height="146" class=" de_780D01ADE8" src="Pics/drex_particles_ray_trasing_and_reflection_effects_custom_13.png"/></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="256" height="146" class=" de_780D01ADE8" src="Pics/drex_particles_ray_trasing_and_reflection_effects_custom_14.png"/></div>
 </td><td class="de_td_262" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 186px; vertical-align: top;" colspan = "1" rowspan = "1" >
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="256" height="152" class=" de_780D01ADE8" src="Pics/drex_particles_ray_trasing_and_reflection_effects_custom_14.png"/></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="256" height="152" class=" de_780D01ADE8" src="Pics/drex_particles_ray_trasing_and_reflection_effects_custom_15.png"/></div>
 </td><td class="de_td_262" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 286px; vertical-align: top;" colspan = "1" rowspan = "1" >
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="256" height="166" class=" de_780D01ADE8" src="Pics/drex_particles_ray_trasing_and_reflection_effects_custom_15.png"/></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="256" height="166" class=" de_780D01ADE8" src="Pics/drex_particles_ray_trasing_and_reflection_effects_custom_16.png"/></div>
 </td></tr></table></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>14. Сохраняйте ниф файл и смотрите что получилось!</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Если все прошло правильно и эффекты наложились корректно, должно получиться что-то вроде такого:<br /><img  alt="" style="border: solid 0px;  " width="256" height="168" class=" de_780D01ADE8" src="Pics/drex_particles_ray_trasing_and_reflection_effects_custom_16.png"/></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Если все прошло правильно и эффекты наложились корректно, должно получиться что-то вроде такого:<br /><img  alt="" style="border: solid 0px;  " width="256" height="168" class=" de_780D01ADE8" src="Pics/drex_particles_ray_trasing_and_reflection_effects_custom_17.png"/></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Покрутите модель в сцене и смотрите как искры реагируют на смещение камеры.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Это работа Билборда, да.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>15. Возвращаемся в Ниф и:<br /></strong>NiBillboardNode&#160; -&gt; NiNode.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Т.е. делаем обычную ноду.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Т.е. превращаем обратно в обычную ноду.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>16. и смотрим в КС!</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="256" height="168" class=" de_780D01ADE8" src="Pics/drex_particles_ray_trasing_and_reflection_effects_custom_17.png"/></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Если вы это видите, поздравляем! У Вас получилось получить!</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="256" height="168" class=" de_780D01ADE8" src="Pics/drex_particles_ray_trasing_and_reflection_effects_custom_18.png"/></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_C8F891A173"><strong>Если вы это видите, поздравляем! У Вас получилось получить!</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Или создание имитации трассировки луча в массиве частиц.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Дарк карта - прячет полигоны.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">niLight - добавляет света по центру луча.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">EFFECT_PROJECTED_LIGHT текстура - собственно и создает сам луч.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><a class="local_link" href="dark.htm"><span class="de_AC776ED092">Дарк карта</span></a><span class="de_56F4564E24"> - прячет полигоны.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><a class="local_link" href="nispotlight.htm"><span class="de_AC776ED092">niLight</span></a><span class="de_56F4564E24"> - добавляет света по центру луча.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><a class="local_link" href="effect_projected_light.htm"><span class="de_AC776ED092">EFFECT_PROJECTED_LIGHT</span></a><span class="de_56F4564E24"> текстура - собственно и создает сам луч.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>17. можете провести еще несколько &quot;наблюдений&quot;.</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">- отключите ДаркКарту.</span></div>
@@ -551,42 +571,41 @@
 <col style="width: 100px;" class="de_col_1_262" />
 <tr style="height: 0px;">
 <td class="de_td_262" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top;" colspan = "1" rowspan = "1" >
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="256" height="168" class=" de_780D01ADE8" src="Pics/drex_particles_ray_trasing_and_reflection_effects_custom_18.png"/></div>
-</td></tr></table></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Верните Дарк карту и снова включите плоскость отсечения.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Замените текстуру в эффекте, на: vfx_poisonglow.dds</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Посмотрите что получилось в редакторе.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_262 detbl" style="width: 100px; height: 0; margin-left: 0; margin-right: auto;">
-<col style="width: 100px;" class="de_col_1_262" />
-<tr style="height: 0px;">
-<td class="de_td_262" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="256" height="168" class=" de_780D01ADE8" src="Pics/drex_particles_ray_trasing_and_reflection_effects_custom_19.png"/></div>
 </td></tr></table></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Теперь, на: vfx_firealpha01.dds</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Посмотрите что получилось.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Да, эффект стал грубее и появился луч направленный в обратную сторону от основного.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Верните Дарк карту и снова включите плоскость отсечения.</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Замените текстуру в эффекте, на: vfx_poisonglow.dds</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Посмотрите что получилось в редакторе:</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_262 detbl" style="width: 100px; height: 0; margin-left: 0; margin-right: auto;">
 <col style="width: 100px;" class="de_col_1_262" />
 <tr style="height: 0px;">
 <td class="de_td_262" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="256" height="168" class=" de_780D01ADE8" src="Pics/drex_particles_ray_trasing_and_reflection_effects_custom_20.png"/></div>
 </td></tr></table></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Вернитесь в Нифскоп и настройках текстурного эффекта:</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Unknown Float = 20.0000</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">А теперь, на: vfx_firealpha01.dds</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_262 detbl" style="width: 100px; height: 0; margin-left: 0; margin-right: auto;">
 <col style="width: 100px;" class="de_col_1_262" />
 <tr style="height: 0px;">
 <td class="de_td_262" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="256" height="168" class=" de_780D01ADE8" src="Pics/drex_particles_ray_trasing_and_reflection_effects_custom_21.png"/></div>
 </td></tr></table></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Это позволяет убирать &quot;стену света&quot;, что возникает в случае использования текстур со слишком малым значением прозрачности альфа канала по краям.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><hr style="width: 100%; height: 5px; text-align: center; margin-left: auto; margin-right: auto; border:none; background-color:#0012ff; color: #0012ff; clear:none;" /></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Таким образом, играя текстурами можно получать крайне Доставные результаты!</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Начиная от создания прожекторов, до красивых эффектов на оружии, которые не возможно получать с использованием только одних спрайтов.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Создание красивых частиц из Thief3 - также возможно!</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">При этом, если использовать более сложные текстуры, можно создавать &quot;тени&quot; от рам окна, вращающихся вентиляторов и пр.!</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Т.к. объект к которому прикреплены источника света, может иметь полноценные анимации движения и вращения!</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Вернитесь в Нифскоп и настройках текстурного эффекта:</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Clipping Plane</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">AreaSize = 20.0000</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Это размер, ака зона влияния, плоскости отсечения.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_262 detbl" style="width: 100px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 100px;" class="de_col_1_262" />
+<tr style="height: 0px;">
+<td class="de_td_262" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="256" height="168" class=" de_780D01ADE8" src="Pics/drex_particles_ray_trasing_and_reflection_effects_custom_22.png"/></div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Это позволяет убирать &quot;стену света&quot;, что возникает в случае использования текстур со слишком малым значением прозрачности альфа канала по краям.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><hr style="width: 100%; height: 5px; text-align: center; margin-left: auto; margin-right: auto; border:none; background-color:#0012ff; color: #0012ff; clear:none;" /></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Главное, правильно применять includes\excludes tools на частицы и их эмиттер, а также наличие статичной геометрии!</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Которую можно скрывать если она не нужна по факту.</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Для удобства также можно </span><a class="local_link" href="sozdanie_editormarker.htm"><span class="de_510E46C8C2">создавать маркеры</span></a><span class="de_CCD88D350B">, которые и использовать в качестве статики.</span></div>
@@ -596,8 +615,10 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Примечание.</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Кроме fSpot&#160; можно использовать другие типы светильников МАХа.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">При этом Omni всегда дает ENVEROMENT эффект.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">При этом Omni всегда дает ENVIRONMENT эффект.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Можно комбинировать несколько типов светильников в одном файле.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Т.е. частицы </span><a class="local_link" href="teksturnyj_ehffekt_svetovoe_shou_na_chastitsakh.htm"><span class="de_510E46C8C2">вполне поддерживают несколько эффектов </span></a><span class="de_CCD88D350B">типа Light и дополнительно ENVIRONMENT.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Который снабдить картой бампа и</span><a class="local_link" href="gloss_1.htm"><span class="de_510E46C8C2"> глосса,</span></a><span class="de_CCD88D350B"> для лучшего контроля и эффективности.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Примечание.</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Можно применить 2 fSpot с текстурами в МАХе, затем один из них преобразовать:</span></div>
@@ -610,12 +631,24 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Примечание.</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Добавлять источник света в режиме</span><a class="local_link" href="light_as_vertex_color.htm"><span class="de_AC776ED092"> light,</span></a><span class="de_56F4564E24"> как было сделано в этой заметке - необязательно.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Можно использовать один тип эффекта.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Вероятно, частицы с таким методом освещения, будут иметь проблемы с МГЕ в режиме PPL.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Можно использовать один тип эффекта. Здесь это описано для полноты данных.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Также, есть мнение, что частицы с таким методом освещения, могут иметь проблемы с МГЕ в режиме PPL.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Примечание.</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Для анимации движения частиц, лучше использовать </span><a class="local_link" href="particles_forces.htm"><span class="de_AC776ED092">Гравитацию</span></a><span class="de_56F4564E24">, чем менять их собственные настройки.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Т.е. гравитация сможет более эффективно передвигать частицы, особенно если это Pcloud. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Примечание.</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Таким образом, играя текстурами можно получать крайне Внушительные результаты!</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Начиная от создания прожекторов, до красивых эффектов на оружии, которые не возможно получать с использованием только одних спрайтов.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Создание красивых частиц из Thief3 - также возможно!</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">При этом, если использовать более сложные текстуры, можно создавать &quot;тени&quot; от рам окна, вращающихся вентиляторов и пр.!</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Т.к. объект к которому прикреплены источника света, может иметь полноценные анимации движения и вращения!</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Т.е. если добавить к объекту карту </span><a class="local_link" href="decal.htm"><span class="de_AC776ED092">декалей</span></a><span class="de_56F4564E24">, получится дополнительно управлять зоной по которой будет работать текстурный эффект в режим Light!</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Впрочем, карта декалей будет уместнее на статических объектах.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Т.е. на шейпе стены на которую будет падать тень от рамы окна проходя, перед этим, через частицы.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">На сами частицы можно наложить отдельную текстуру проекции света исходящего из окна, да.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><hr style="width: 100%; height: 5px; text-align: center; margin-left: auto; margin-right: auto; border:none; background-color:#0012ff; color: #0012ff; clear:none;" /></div>
 </div>                                    			
                 			</div>

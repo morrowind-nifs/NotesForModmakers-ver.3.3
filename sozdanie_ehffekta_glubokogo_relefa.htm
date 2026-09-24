@@ -345,8 +345,15 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>А дальше, читаем </strong><a class="local_link" href="dual_layered_meshes.htm"><span class="de_2B94C39861"><strong>здесь.</strong></span></a></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">А продолжение этой статьи смотрим </span><a class="local_link" href="sozdanie_ehffekta_glubokogo_obema.htm"><span class="de_0F609BFBFC">здесь!</span></a></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_DBF328B893">Там описано дальнейшие развитие метода.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_DBF328B893">И еще смотрим, </span><a class="local_link" href="sozdaniya_ehffekta_mekha.htm"><span class="de_0F609BFBFC">здесь</span></a><span class="de_DBF328B893">, где примечания по созданию меха существа примечены.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Либо прям вот здесь:</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><hr style="width: 100%; height: 4px; text-align: center; margin-left: auto; margin-right: auto; border:none; background-color:#0012ff; color: #0012ff; clear:none;" /></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Либо, читаем прям вот здесь:</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">*другой вопрос, что данный случай плохо применим к </span><a class="local_link" href="niskininstance.htm"><span class="de_0F609BFBFC">скиненым</span></a><span class="de_823826CA2C"> сеткам, т.е. с файлами существ, лучше работать (только) в 3д редакторе.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Где использовать модификатор Extrude, который позволит правильно увеличить габариты, не нарушая позиции сетки.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Т.к. в нифскопе будут проблемы с правильным позиционированием копии базовой сетки.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Т.е. просто масштабирование сетки не даст желаемого результата, приведя к смещению оной, а не &quot;расширению&quot;.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_1170 detbl" style="width: 1170px; height: 241; margin-left: 0; margin-right: auto;">
 <col style="width: 231px;" class="de_col_1_236" />
 <col style="width: 939px;" class="de_col_2_934" />
@@ -421,19 +428,19 @@
 </td><td class="de_td_934" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 939px; vertical-align: top;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Все результаты будут видны сразу. </div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">И чем больше слоев тем &quot;глубже&quot; будет изображаемый объем.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><a class="local_link" href="nizbufferproperty.htm"><span class="de_0F609BFBFC"><strong>Z-буфер</strong></span></a><span class="de_823826CA2C"><strong> (здесь) НЕ! добавляем, </strong>иначе он смешает все слои в кашу. </span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Хотя, в другом случае его потребуется добавить, об этом ниже.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Но при создании букв, или &quot;островков&quot; он не нужен!</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><a class="local_link" href="nizbufferproperty.htm"><span class="de_0F609BFBFC"><strong>Z-буфер</strong></span></a><span class="de_823826CA2C"><strong> </strong></span><span class="de_1BF372DA7C"><strong>(здесь) НЕ! добавляем, </strong>иначе он смешает все слои в кашу. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Хотя, в </span><a class="local_link" href="sozdanie_ehffekta_glubokogo_obema.htm"><span class="de_0F609BFBFC">другом случае</span></a><span class="de_823826CA2C"> его потребуется добавить, об этом см. ту заметку.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Но при создании букв, или &quot;островков&quot;, или </span><a class="local_link" href="sozdaniya_ehffekta_mekha.htm"><span class="de_0F609BFBFC">меха</span></a><span class="de_823826CA2C">, он не нужен!</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Собственно даже с текстурой без альфа канала, можно проделывать такой &quot;номер&quot;.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Конечно при наличии прозрачности </span><a class="local_link" href="vertex_alpha.htm"><span class="de_0F609BFBFC">на уровне вертексов.</span></a><span class="de_823826CA2C"> </span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Т.е. если поверхность имеет прозрачность в свойствах vertex color, то это будет влиять на прозрачность даже &quot;непрозрачных&quot; текстур (без альфа канала т.е.)</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Высокие значение&#160; threshold &quot;подъедят&quot; края.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Высокие значение&#160; threshold &quot;обгрызут&quot; края текстуры.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Т.е. можно наделать &quot;выпуклостей&quot; из чего угодно, не прибегая к экструзиям полигонов и прочему 3д шаманству!</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Однако, для более точного контроля, всегда следует использовать текстуры с альфа каналом!</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Если текстура оказалась &quot;съедена&quot; - уменьшите значение threshold.<br /> </strong>Такое бывает если текстура уже имеет резкий контур в альфа канале.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Если текстура оказалась &quot;съедена&quot; слишком сильно - уменьшите значение threshold.<br /> </strong>Такое бывает если текстура уже имеет резкий контур в альфа канале.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. следует учитывать мягкость контура в альфа канале текстуры, а равно формат!<br />DXT5 всегда будет иметь более мягкий контур а альфе, чем DXT3.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Возможно, FILTER_BILERP будет более предпочтительным, чем FILTER_TRILERP.</span></div>
@@ -443,9 +450,11 @@
 <td class="de_td_236" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 231px; vertical-align: top;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="230" height="187" class=" de_780D01ADE8" src="Pics/drex_sozdanie_ehffekta_glubokogo_relefa_custom_8.png"/></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">threshold 122</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Кусок текстуры &quot;съеден&quot;.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td><td class="de_td_934" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 939px; vertical-align: top;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="230" height="187" class=" de_780D01ADE8" src="Pics/drex_sozdanie_ehffekta_glubokogo_relefa_custom_9.png"/><img  alt="" style="border: solid 0px;  " width="230" height="187" class=" de_780D01ADE8" src="Pics/drex_sozdanie_ehffekta_glubokogo_relefa_custom_10.png"/><img  alt="" style="border: solid 0px;  " width="230" height="187" class=" de_780D01ADE8" src="Pics/drex_sozdanie_ehffekta_glubokogo_relefa_custom_11.png"/><img  alt="" style="border: solid 0px;  " width="230" height="188" class=" de_780D01ADE8" src="Pics/drex_sozdanie_ehffekta_glubokogo_relefa_custom_12.png"/></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">threshold 2</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">и threshold 2</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr><tr style="height: 0px;">
 <td class="de_td_236" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 231px; vertical-align: top;" colspan = "1" rowspan = "1" >
@@ -456,7 +465,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">А также проверьте альфа канал текстуры!</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Примечание.</strong></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Стоит обратить внимание на текстуру.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Стоит обратить внимание и на саму текстуру.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Контуры (букв или что там будет) желательно дополнительно обработать создав Stroke (в настройках слоя Фотошопа).</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Цвет контура подобрать под основной цвет (букв, или что там будет).</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Не забыть поправить альфа канал, так чтобы контуры также были прописаны.</div>
@@ -490,7 +499,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">threshold 2</div>
 </td><td class="de_td_251" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 89px; vertical-align: top;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="245" height="282" class=" de_780D01ADE8" src="Pics/drex_sozdanie_ehffekta_glubokogo_relefa_custom_19.png"/></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Stroke + 2pct</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">threshold 2<br />Stroke (в свойствах слоя текстуры) на 2pct</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr></table></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_885 detbl" style="width: 885px; height: 0; margin-left: 0; margin-right: auto;">
@@ -503,7 +512,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="300" height="383" class=" de_780D01ADE8" src="Pics/drex_sozdanie_ehffekta_glubokogo_relefa_custom_21.png"/></div>
 </td></tr><tr style="height: 0px;">
 <td class="de_td_455" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top;" colspan = "1" rowspan = "1" >
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">В темноте и без z-буфера, энверомент карта работает только по самому верхнему слою и никак не подсвечивает</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">В темноте и без z-буфера, <a class="local_link" href="effect_environment_map.htm"><span class="de_2B94C39861">энверомент карта </span></a>работает только по самому верхнему слою и никак не подсвечивает</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">столбики букв.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td><td class="de_td_430" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 785px; vertical-align: top;" colspan = "1" rowspan = "1" >
@@ -512,6 +521,7 @@
 </td></tr><tr style="height: 0px;">
 <td class="de_td_455" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="449" height="310" class=" de_780D01ADE8" src="Pics/drex_sozdanie_ehffekta_glubokogo_relefa_custom_22.png"/></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td><td class="de_td_430" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 785px; vertical-align: top;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Возможно добавление glow карты, или более светлого материала, может сделать буквы еще более рельефными.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Но к сожалению, не посредством действия текстурных эффектов!</div>
@@ -540,6 +550,13 @@
 		</span>
 	</span>
 	<span class="b-tree__itemText"><a class="b-breadCrumbs__link" href="sozdanie_ehffekta_glubokogo_obema.htm">&#x0421;&#x043E;&#x0437;&#x0434;&#x0430;&#x043D;&#x0438;&#x0435; &#x044D;&#x0444;&#x0444;&#x0435;&#x043A;&#x0442;&#x0430; &#x0433;&#x043B;&#x0443;&#x0431;&#x043E;&#x043A;&#x043E;&#x0433;&#x043E; &#x043E;&#x0431;&#x044A;&#x0435;&#x043C;&#x0430;</a></span>
+</div><div class="m-workZone_seeAlso_itemContent">
+	<span class="b-tree__spacer">
+		<span class="b-tree__i_article">
+			<span class="b-tree__i_article_inner"></span>
+		</span>
+	</span>
+	<span class="b-tree__itemText"><a class="b-breadCrumbs__link" href="sozdaniya_ehffekta_mekha.htm">&#x0421;&#x043E;&#x0437;&#x0434;&#x0430;&#x043D;&#x0438;&#x044F; &#x044D;&#x0444;&#x0444;&#x0435;&#x043A;&#x0442;&#x0430; &#x043C;&#x0435;&#x0445;&#x0430;</a></span>
 </div>	</div>
                     			
                 			</div>
