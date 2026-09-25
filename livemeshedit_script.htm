@@ -335,6 +335,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">0. Install MWSE for Morrowind</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">1. Download LiveMeshEdit script (from nexusmods,MMC discord,..-.)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_ECF90AE084">(скрипты приведены ниже! Т.е. копируем текст в новый текстовый файл, сохраняем с правильным названием и кладем по правильному адресу).</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">2. Put &quot;main.lua&quot; file in </span><span class="de_4DDBC84374">Morrowind\Data Files\MWSE\mods\LiveMeshEdit</span><span class="de_6D2D8B1FD4"> folder</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">3. Open &quot;main.lua&quot; file with text editor(notepad). </span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; you'll see:</span></div>
@@ -364,6 +365,263 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">note: similar editing is possible in OpenMW too thanks to Wazabear</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160;&#160; &#160; &#160; &#160; https://gitlab.com/glassmancody.info/openmw/-/pipelines/491740071</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160;&#160; &#160; &#160; &#160; https://gitlab.com/glassmancody.info/openmw/-/commits/live_reload_nifs</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><hr style="width: 100%; height: 4px; text-align: center; margin-left: auto; margin-right: auto; border:none; background-color:#0012ff; color: #0012ff; clear:none;" /></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_3D39C0939E"><strong>Data Files -&gt; MWSE -&gt; mods -&gt; liveMeshEditing -&gt; main.lua</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_1063 detbl" style="width: 1063px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 1063px;" class="de_col_1_1063" />
+<tr style="height: 0px;">
+<td class="de_td_1063" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 1063px; vertical-align: top; background-color: #bfbfbf;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_3D39C0939E"><strong>&#160;Live Mesh Editing script:</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_3D39C0939E"><strong>main.lua</strong></span></div>
+</td></tr><tr style="height: 0px;">
+<td class="de_td_1063" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 1063px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">--[[</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; Live Mesh Editing.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; Usage:</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; update the path variable to point your file</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; go in-game and press CTRL+X to spawn your object</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; the game object will refresh when file is edited</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">--]]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">-- file path of the target mesh</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">local relpath = &quot;g7\\export.nif&quot;</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">-- absolute path (in lowercase)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">local abspath = string.lower(tes3.installDirectory .. &quot;\\data files\\meshes\\&quot; .. relpath)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">local filewatcher = require(&quot;filewatcher&quot;)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">filewatcher.registerWatcher(abspath)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">local function update()</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; timer.delayOneFrame(function()</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; timer.delayOneFrame(function()</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; local ref = tes3.getReference(relpath)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; if not ref then return end</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; local src = tes3.loadMesh(relpath, false)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; local dst = ref.sceneNode</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; if not (src and dst) then return end</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; -- transfer properties</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; dst.fogProperty = src.fogProperty</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; dst.alphaProperty = src.alphaProperty</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; dst.stencilProperty = src.stencilProperty</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; dst.zBufferProperty = src.zBufferProperty</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; dst.materialProperty = src.materialProperty</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; dst.texturingProperty = src.texturingProperty</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; dst.vertexColorProperty = src.vertexColorProperty</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; -- transfer children</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; dst:detachAllChildren()</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; for i, child in ipairs(src.children) do</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; if child then</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; dst:attachChild(child, true)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; end</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; end</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; dst:update()</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; dst:updateEffects()</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; dst:updateProperties()</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; tes3.messageBox(&quot;MESH RELOADED&quot;)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; end)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; end)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">end</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">event.register(&quot;fileWatcher:fileModified&quot;, update, { filter = abspath })</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">local function onKeyDown(e)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; if not e.isControlDown then return end</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; local ref = tes3.player.tempData.liveMeshEditingRef</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; if ref then</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; return</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; end</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; local rayhit = tes3.rayTest{</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; position = tes3.getPlayerEyePosition(),</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; direction = tes3.getPlayerEyeVector(),</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; ignore = {tes3.player},</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; }</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; if not rayhit then return end</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; local cell = tes3.player.cell</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; cell_modified = cell.modified</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; -- create the reference</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; ref = tes3.createReference({</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; cell = cell,</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; position = rayhit.intersection,</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; object = tes3.createObject({</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; objectType = tes3.objectType.activator,</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; id = relpath,</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; name = relpath,</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; mesh = relpath,</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; getIfExists = true,</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; }),</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; })</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; tes3.player.tempData.liveMeshEditingRef = ref</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; -- avoid zfighting with ground</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; local z = math.max(math.abs(ref.object.boundingBox.min.z), 1.0)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; ref.position = ref.position + tes3vector3.new(0.0, 0.0, z)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; ref.object.sourceless = true</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; ref.hasNoCollision = true</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; ref.modified = false</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; tes3.player.cell.modified = cell_modified</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">end</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">event.register(&quot;keyDown&quot;, onKeyDown, {filter=tes3.scanCode.x})</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+</td></tr></table></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_3D39C0939E"><strong>Data Files -&gt; MWSE -&gt; lib -&gt;&#160; filewatcher.lua</strong></span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_1065 detbl" style="width: 1065px; height: 0; margin-left: 0; margin-right: auto;">
+<col style="width: 1065px;" class="de_col_1_1065" />
+<tr style="height: 0px;">
+<td class="de_td_1065" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 1065px; vertical-align: top; background-color: #bfbfbf;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_3D39C0939E"><strong>&#160;filewatcher.lua</strong></span></div>
+</td></tr><tr style="height: 0px;">
+<td class="de_td_1065" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 1065px; vertical-align: top;" colspan = "1" rowspan = "1" >
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">--[[</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; filewatcher.lua</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; Example:</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; local filewatcher = require(&quot;filewatcher&quot;)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; local file = string.lower(lfs.currentdir() .. &quot;\\test.txt&quot;)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; filewatcher.registerWatcher(file)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; local function onFileModified(e)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; tes3ui.log(io.open(e.path, &quot;rb&quot;):read(&quot;*a&quot;))</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; end</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; event.register(&quot;fileWatcher:fileModified&quot;, onFileModified, { filter = file })</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">--]]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">local this = {}</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">--- @alias Path string</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">--- @alias TimeStamp number</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">--- @alias NotificationHandle number</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">--- @class RegistryEntry</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">--- @field handle NotificationHandle</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">--- @field mtimes table&lt;Path, TimeStamp&gt;</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">--- @type table&lt;Path, RegistryEntry&gt;</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">this.registry = {}</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">local ffi = require(&quot;ffi&quot;)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">ffi.cdef[[</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; typedef int BOOL;</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; typedef unsigned long DWORD;</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; typedef void HANDLE;</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; DWORD GetLastError();</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; HANDLE* FindFirstChangeNotificationA(const char* path, BOOL recursive, DWORD filter);</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; BOOL FindNextChangeNotification(HANDLE*);</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; BOOL FindCloseChangeNotification(HANDLE*);</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; DWORD WaitForSingleObject(HANDLE*, DWORD);</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">]]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">--- @param dir Path</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">--- @return NotificationHandle</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">local function openNotificationHandle(dir)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; return ffi.C.FindFirstChangeNotificationA(dir, false, 0x11F)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">end</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">--- @param handle NotificationHandle</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">--- @return boolean</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">local function closeNotificatioNHandle(handle)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; return ffi.C.FindCloseChangeNotification(handle)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">end</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">--- @param handle NotificationHandle</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">--- @return boolean</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">local function getDirectoryModified(handle)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; if ffi.C.WaitForSingleObject(handle, 0) == 0 then</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; ffi.C.FindNextChangeNotification(handle)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; return true</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; end</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; return false</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">end</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">local function dispatchEvents()</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; for _, entry in pairs(this.registry) do</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; -- use windows api to check if any directory contents have been modified</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; if getDirectoryModified(entry.handle) then</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; -- the directory was modified, now figure out which particuler files</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; for path, prevTime in pairs(entry.mtimes) do</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; local currTime = lfs.attributes(path, &quot;modification&quot;)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; if currTime ~= prevTime then</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; entry.mtimes[path] = currTime</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; --- @diagnostic disable-next-line: undefined-field</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; timer.frame.delayOneFrame(function()</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; event.trigger(&quot;fileWatcher:fileModified&quot;, { path = path }, { filter = path })</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; end)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; end</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; end</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; end</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; end</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">end</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">--- @param abspath Path</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">--- @return Path</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">function this.registerWatcher(abspath)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; abspath = abspath:lower()</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; local dir = abspath:match(&quot;(.-)([^\\]+)$&quot;)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; local mtime = lfs.attributes(abspath, &quot;modification&quot;)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; if this.registry[dir] then</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; this.registry[dir].mtimes[abspath] = mtime</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; else</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; this.registry[dir] = {</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; handle = openNotificationHandle(dir),</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; mtimes = { [abspath] = mtime }</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; }</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; end</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; if not event.isRegistered(&quot;simulate&quot;, dispatchEvents) then</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; event.register(&quot;simulate&quot;, dispatchEvents)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; end</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; return abspath</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">end</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">--- @param abspath Path</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">--- @return Path</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">function this.unregisterWatcher(abspath)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; abspath = abspath:lower()</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; -- make sure no other file is using hte same directory before clearing it</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; local dir = abspath:match(&quot;(.-)[^\\]+$&quot;)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; local entry = this.registry[dir]</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; if entry then</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; entry.mtimes[abspath] = nil</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; -- close the handle if no other files in this directory are being watched</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; if table.empty(entry.mtimes) then</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; closeNotificatioNHandle(entry.handle)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; this.registry[dir] = nil</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; end</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; if table.empty(this.registry) then</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; if event.isRegistered(&quot;simulate&quot;, dispatchEvents) then</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; &#160; &#160; event.unregister(&quot;simulate&quot;, dispatchEvents)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; &#160; &#160; end</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; &#160; &#160; end</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; end</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">&#160; &#160; return abspath</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">end</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6D2D8B1FD4">return this</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+</td></tr></table></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><hr style="width: 100%; height: 3px; text-align: center; margin-left: auto; margin-right: auto; border:none; background-color:#0012ff; color: #0012ff; clear:none;" /></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>

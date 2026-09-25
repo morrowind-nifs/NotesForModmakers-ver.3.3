@@ -387,6 +387,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Но не имея нужных групп анимации, лишь, занимался заполнением Warning.txt ошибками.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. обращайте особое внимание на анимации существ компаньенов с этим флагом в настройках АИ!</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Если они получат непредусмотренное в анимациях оружие, то не смогут им пользоваться, но все равно, будут пробовать это сделать!</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Возможно в ОпенМВ с этим дела обстоят лучше, т.е. исправления такого состояния дел, (возможно) туда подвезли к 0.51ой версии.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>- к вопросу Skill в настройках существ.</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Combat Magic и Stealth.</div>
@@ -394,6 +395,17 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Высокий Combat, предполагает, что существо скорее ринется в ближней бой.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Высокий Magic - приоритет к использованию заклинаний.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Высокий Stealth - метательное, стрелковое оружие и уклонение от ближнего боя.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>- призванные существа ГМСТ и АИ.</strong></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Призыв существ <a class="local_link" href="smagicscampid_i_pr.htm"><span class="de_2B94C39861">задается в ГМСТ</span></a>, где возможно указать любое произвольное Айди.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. вызов Скампа будет призывать Дагот Ура!<br /><span class="de_ECB3AE3B15">И самое занятное, без каких либо изменений его АИ в настройках плагина, он будет Исправно Охранять Призвавшего!</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">(хоть Игрока, хоть стражника в Кальдере).<br /></span>Т.е. при вызове существа, его базовый АИ пакет перезаписывается на &quot;френдли груп&quot;.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Тоже самое происходит, если вызвав консоль, кликнуть по Титану Огриму (атакующему игрока) и набрать:<br />AiFollow Player 0 0 0 0 0 0 24</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Огрим прекратит атаку и спокойной пойдет за игроком, защищая от прочих &quot;нежелательных встречных&quot;.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Но, насколько это верно для скриптов и если вызывать существа на НПС - вопрос.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Т.е. не проверялось!</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Т.е. вместо StopCombat&#160; указывать AiFollow (target) 0 0 0 0 0 0 <strong>00</strong> (т.е. указав нулевое, или около нулевое время).</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><hr style="width: 100%; height: 5px; text-align: center; margin-left: auto; margin-right: auto; border:none; background-color:#0012ff; color: #0012ff; clear:none;" /></div>
 </div>                                    			
                 			</div>

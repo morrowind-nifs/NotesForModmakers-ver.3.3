@@ -333,6 +333,16 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><a class="local_link" href="dorabotka_stencil_ili_portaly_2_0.htm"><span class="de_0F609BFBFC">Доработка Stencil или порталы 2.0</span></a></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_CCD88D350B">Основная статья: </span><a class="local_link" href="nistencilproperty.htm"><span class="de_510E46C8C2">NiStencilProperty</span></a><span class="de_CCD88D350B">.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6619658727"><strong>ПРИМЕЧАНИЕ!<br /></strong></span><span class="de_E3F9636E2D"><strong>Для ОпенМВ (все билды) (0.51 включительно)!<br /></strong></span><span class="de_56F4564E24">Stencil Ref не должно превышать 255!<br />Т.е. установка значения выше 255 приводит к отказу в обслуживании, модель перестает правильно работать.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Capo(strоhic) из команды ОпенМВ, писал; это завязано на ограничение OpenGl и (по видимости) не может быть расширено.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_6619658727">Также!<br /></span><span class="de_E3F9636E2D"><strong>Нифскоп линейки 2.0 </strong></span><span class="de_56F4564E24">(по видимости) выставляет значение:<br />Stencil Mask = 0, а не 4294967295 (-1)</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Что также может приводить к нарушению работы моделей под OpenMW движком!</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Т.е. если планируется создавать модель под ОпенМВ не устанавливайте Stencil Ref&#160; выше 255 и проверяйте значение Stencil Mask, оно должно равняться минус один (-1), а не быть равным нулю (=0).</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Для Ванильного Морровинда, значение Stencil Ref может принимать любое значение до 65535, а Stencil Ref может быть равным нулю.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Хотя, если не планируется использовать какие-то особенно сложные техники, сохраняйте значение, как равное -1 (4294967295).</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><hr style="width: 100%; height: 4px; text-align: center; margin-left: auto; margin-right: auto; border:none; background-color:#0012ff; color: #0012ff; clear:none;" /></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Это были </span><a class="local_link" href="dorabotka_stencil_pervyj_privet_nerevaru.htm"><span class="de_AC776ED092">приветы</span></a><span class="de_56F4564E24">, а теперь пару слов собственно о порталах... ну и о &quot;зеркалах&quot; заодно!</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Основные принципы, полагаю, должны быть понятны из выше писанного.</span></div>
@@ -401,6 +411,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Разместите объекты в редакторе.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Сначала &quot;портал&quot;, затем кровать и триолит.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">И посмотрим в игре, что же из этого получилось...</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><table class="de_tbl_974 detbl" style="width: 496px; height: 43; margin-left: 0; margin-right: auto;">
 <col style="width: 100px;" class="de_col_1_518" />
 <col style="width: 396px;" class="de_col_2_456" />
@@ -415,6 +426,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td><td class="de_td_456" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 396px; vertical-align: top;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">А вот и он!<br />Стоял несколько дальше от входа.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr><tr style="height: 0px;">
 <td class="de_td_518" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 100px; vertical-align: top;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><img  alt="" style="border: solid 0px;  " width="512" height="288" class=" de_780D01ADE8" src="Pics/drex_dorabotka_stencil_portalnyj_privet_nerevaru_custom_6.png"/></div>

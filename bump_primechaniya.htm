@@ -368,7 +368,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Предположительно, была разработана для улучшения отображения всяких металлических поверхностей.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Т.е. в те времена, а это 2000-3 годы, еще не шло речи об использовании нормалей для создания фейковой геометрии.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Точнее, речь шла, но железо еще не позволяло.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">А также, видеокарты были без шейдерными. Собственно поддержку шейдеров они получили где-то в 2002ом.</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">А также, видеокарты были без шейдерными. Собственно (приемлемую) поддержку шейдеров они получили где-то в 2004ом.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Отчего, движки до шейдерной эпохи использовали другие методы для улучшения вида моделей.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Один из них и был бамп + карта блеска.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Этот метод, при правильном использовании, показывает весьма неплохие результаты!</span></div>
@@ -404,7 +404,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Возможно зависит от версии драйвера и типа видео карты... АТИ или НВидия.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Примечание.</strong></span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Серый </span><a class="local_link" href="bump_normallmap_displace.htm"><span class="de_AC776ED092">&quot;настоящий&quot; бамп,</span></a><span class="de_56F4564E24"> работает намного хуже </span><a class="local_link" href="bump_normallmap_displace.htm"><span class="de_AC776ED092">Нормалей</span></a><span class="de_56F4564E24">!</span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Текстура,&#160; </span><a class="local_link" href="bump_normallmap_displace.htm"><span class="de_AC776ED092">&quot;настоящего&quot; бампа </span></a><span class="de_56F4564E24">(серая), работает намного хуже текстуры </span><a class="local_link" href="bump_normallmap_displace.htm"><span class="de_AC776ED092">Нормалей</span></a><span class="de_56F4564E24">(цветная, в основном сине-фиолетовая)!</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24">Т.е. если удалить цветность с текстуры бампа сделав ее серой, согласно теоретической спецификации этой текстуры по нифскопу, это существенно понизит уровень рельефности модели.</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Примечание.</strong></span></div>
@@ -419,9 +419,7 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Примечание.</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_56F4564E24"><strong>Уважаемый Ancient писал:</strong></span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">У меня тут интересный эксперимент вышел над текстурными слотами. </div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Если на карту бампа повесить UV-контроллер положим по вертикали, а на NiTextureEffect поставить NiKeyframeController с движением блика по вертикали, </div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">и бамп в идеале повторяющийся бесшовный, то выходят любопытные эффекты</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Если на карту бампа повесить UV-контроллер положим по вертикали, а на NiTextureEffect поставить NiKeyframeController с движением блика по вертикали, и бамп в идеале повторяющийся бесшовный, то выходят любопытные эффекты.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Можно задавать значения от 0 до 1, это приводит к более гладкому рисунку рефлекта по поверхности бампа. </div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">У Карпа в его улучшенных призванных доспехах значения матрицы бампа на щите 0,1, 0,1, 0,1, 0,1. И он использует базовую текстуру щита в слоте бампа</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>

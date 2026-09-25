@@ -343,20 +343,27 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Все это возможно!</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Небольшая заметка о том, как это делается.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Примечание!<br /></strong>После 2020го года, с помощью МВСЕ, появилась удобная возможность внедрять новые кости в базовый файл анимаций, без необходимости изменения оного на прямую!<br />Т.е. смотрим (на NexusMods.com) Weapon Snatching (от Greatness7) плагин и делаем по аналогии свой (lua скрипт) который внедрит все необходимые кости в целевые файлы не изменяя их напрямую (т.е. во время сеанса игры)!<br />Если не использовать МВСЕ (что может быть по причине использования &quot;старых&quot; версий вындоуз), тогда придется изменять base_anim и xbase_anim файлы на прямую, внедряя в оные &quot;новые кости&quot;. </div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">И это (скорее всего) приведет к конфликту с другими плагинами которые также изменяют эти файлы на прямую.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">И еще, если эти файлы (все-таки) изменяются, следуют обязательно проверить размер <a class="local_link" href="bounding_box.htm"><span class="de_2B94C39861">BoundBoxа</span></a>!</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. если использовались ванильные (оригинальные) файлы базовой анимации, то исходный БоундБокс слишком большого размера и его следует уменьшить (см. Jamming Off плагин в качестве примера).</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><hr style="width: 100%; height: 5px; text-align: center; margin-left: auto; margin-right: auto; border:none; background-color:#0012ff; color: #0012ff; clear:none;" /></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Собственно сам метод описан<a class="local_link" href="reactor_tkani.htm"><span class="de_2B94C39861"> тут</span></a>, при создании плаща для НПС используется все тоже самое.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>Собственно, сам метод описан</strong><a class="local_link" href="reactor_tkani.htm"><span class="de_2B94C39861"><strong> тут</strong></span></a><strong>, при создании плаща для НПС используется все тоже самое.</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Создаем кости, связи между оными, анимируем.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Можно использовать другие методы анимации кроме реактора. Т.е. используем то, что даст лучший результат!</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Можно использовать другие методы анимации кроме реактора. </span></div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Т.е. используем то, что даст лучший результат!</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Анимации создаем, либо сразу в файле базовой анимации, либо делаем нарезку <a class="local_link" href="attach_kf.htm"><span class="de_2B94C39861">на основе Кф файлов</span></a> извлеченных из оного файла.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Второй метод выглядит более точным и простым в работе.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">После создания новых КФ файлов, содержащих анимации новых костей, <a class="local_link" href="attach_kf.htm"><span class="de_2B94C39861">соединяем получившееся обратно в Базовом Файле анимации</span></a>.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Теперь есть два варианта:</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">1. экспортируем все и сразу, после чего заменяем исходный BaseAnim.KF получившимся.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>1.</strong> экспортируем все и сразу, после чего заменяем исходный BaseAnim.KF получившимся.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">А в оригинальные файлы BaseAnim и xBaseAnim вклеиваем дополнительные кости из нового Хфайла..</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">2. экспортируем, берем новый baseAnim и вклеиваем новые кости, содержащие анимации, из оного в исходный xBaseAnim.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>2.</strong> экспортируем, берем новый baseAnim и вклеиваем новые кости, содержащие анимации, из оного в исходный xBaseAnim.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Также, кости из нового Хфайла, переклеиваем в оригинальный BaseAnim.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Т.е. не затрагиваем КФ файл.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
@@ -369,10 +376,10 @@
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><strong>И так!</strong></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Основной момент который нужен для создания плащей и прочего:</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">- Правильный набор дополнительных костей в файлах Базовой анимации!</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">При этом, таких наборов может быть много!</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">При этом, таких наборов может быть много!</span></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><span class="de_823826CA2C">Один для Тяжелых плащей, второй для легкий, третий еще для чего-нибудь.</span></div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Главное правильные названия костей Bip01_ПроизвольноеИмя.</div>
-<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Добавляем эти кости в файлы базовой анимации и теперь можно создавать модели плащей (или чего-нибудь другого).</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Главное правильные названия оных: <strong>Bip01</strong>_<span class="de_823826CA2C">ПроизвольноеИмя</span>.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Добавляем эти кости в файлы базовой анимации (base_anim.nif и xbase_anim.nif) и теперь можно создавать модели плащей (или чего-нибудь другого).</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Которые будут получать анимации прописанные в базовом файле.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Сами модели одежды и причесок не содержат анимаций, но получают оную от Базовой анимации.</div>
@@ -400,6 +407,7 @@
 </td><td class="de_td_518" style = "padding: 2px; padding-bottom: 1px; border-left-style: solid; border-left-width: 1px; border-left-color: #000000; border-right-style: solid; border-right-width: 1px; border-right-color: #000000; border-top-style: solid; border-top-width: 1px; border-top-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-bottom-color: #000000;  width: 426px; vertical-align: top;" colspan = "1" rowspan = "1" >
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Тестовый скрин.</div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">Косичка в прическе размещена совсем не правильно, но вот анимации оной работают в такт движениям игрока.</div>
+<div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;">&#160;</div>
 </td></tr></table></div>
 <div class="p" style="text-align: left; direction: ltr; margin-left: 0px; text-indent: 0px;"><hr style="width: 100%; height: 5px; text-align: center; margin-left: auto; margin-right: auto; border:none; background-color:#0012ff; color: #0012ff; clear:none;" /></div>
 </div>                                    			

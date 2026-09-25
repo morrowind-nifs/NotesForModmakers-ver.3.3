@@ -285,6 +285,11 @@ span.de_1DF620E462
 	color:#0000ff;
 	text-decoration:underline;
 }
+span.de_1F207B3235
+{
+	color:#25da2d;
+	font-style:italic;
+}
 span.de_2029B8BAF4
 {
 	color:#ff003c;
@@ -392,6 +397,12 @@ span.de_312BCF6540
 	font-family: "Verdana";
 	font-size: 9pt;
 	color:#8cc16f;
+}
+span.de_3172B4E983
+{
+	font-family: "Arial";
+	font-size: 12pt;
+	color:#009b00;
 }
 span.de_31A4EF827C
 {
@@ -508,6 +519,12 @@ span.de_3CF7D165FD
 	font-style:italic;
 	text-decoration:underline;
 }
+span.de_3D34D4A0DA
+{
+	font-size: 12pt;
+	color:#3741c8;
+	font-style:italic;
+}
 span.de_3D39C0939E
 {
 	font-size: 12pt;
@@ -568,6 +585,13 @@ span.de_4197C2ABD4
 	color:#25da2d;
 	font-style:italic;
 }
+span.de_43547A6E4C
+{
+	font-family: "Arial";
+	font-size: 12pt;
+	color:#ff0000;
+	font-style:italic;
+}
 span.de_4459C90C23
 {
 	font-family: "Arial";
@@ -591,6 +615,13 @@ span.de_4713E0C8F1
 }
 span.de_476D3D315E
 {
+	text-decoration:underline;
+}
+span.de_4774E6109F
+{
+	font-family: "Arial";
+	font-size: 16pt;
+	color:#000000;
 	text-decoration:underline;
 }
 span.de_47C004778E
@@ -708,6 +739,13 @@ span.de_537BE7A80F
 	font-size: 4pt;
 	color:#808080;
 }
+span.de_53E014E4C4
+{
+	font-size: 12pt;
+	color:#7f7f7f;
+	font-style:italic;
+	text-decoration:underline;
+}
 span.de_53FB983F95
 {
 	font-family: "Arial";
@@ -753,6 +791,13 @@ span.de_58EC97F911
 {
 	font-size: 12pt;
 	color:#6e37c8;
+	font-style:italic;
+}
+span.de_5B69A7D58C
+{
+	font-family: "Arial";
+	font-size: 12pt;
+	color:#b237c8;
 	font-style:italic;
 }
 span.de_5BF9C64FEB
@@ -841,6 +886,12 @@ span.de_6315D75228
 	font-family: "Arial";
 	font-size: 12pt;
 	color:#ec1346;
+}
+span.de_648C4E1F85
+{
+	font-family: "Arial";
+	font-size: 11pt;
+	color:#ec4113;
 }
 span.de_6619658727
 {
@@ -1030,6 +1081,11 @@ span.de_79D0432756
 	color:#ff00ae;
 	font-style:italic;
 }
+span.de_79FD8174D7
+{
+	color:#b237c8;
+	font-style:italic;
+}
 span.de_7A2908DFFF
 {
 	color:#1322ec;
@@ -1061,6 +1117,13 @@ span.de_7D9EC7FF04
 	font-family: "Arial";
 	font-size: 12pt;
 	color:#c85637;
+}
+span.de_7E55975719
+{
+	font-family: "Arial";
+	font-size: 12pt;
+	color:#b237c8;
+	text-decoration:underline;
 }
 span.de_7EA41EC2FA
 {
@@ -1104,6 +1167,13 @@ span.de_84040A150E
 {
 	font-family: "Arial";
 	color:#0000ff;
+	text-decoration:underline;
+}
+span.de_848A40FCBB
+{
+	font-family: "Arial";
+	font-size: 12pt;
+	color:#ec4113;
 	text-decoration:underline;
 }
 span.de_85AE03A4D6
@@ -1291,6 +1361,12 @@ span.de_9AA7EDE7D5
 	font-size: 12pt;
 	color:#b66049;
 }
+span.de_9B51EC0161
+{
+	font-family: "Consolas";
+	font-size: 11pt;
+	color:#ff3600;
+}
 span.de_9C5C3D989E
 {
 	color:#1322ec;
@@ -1348,6 +1424,12 @@ span.de_A6E15FFF38
 {
 	font-family: "Arial";
 	color:#da2550;
+}
+span.de_AA11FBF2AA
+{
+	color:#b237c8;
+	font-style:italic;
+	text-decoration:underline;
 }
 span.de_AB91DAC0DA
 {
@@ -1543,6 +1625,11 @@ span.de_C2E175B6D8
 	color:#b66049;
 	font-style:italic;
 }
+span.de_C31C5C45D0
+{
+	font-size: 12pt;
+	color:#3741c8;
+}
 span.de_C3645CC999
 {
 	color:#8a4837;
@@ -1563,11 +1650,6 @@ span.de_C5FD7AAAF4
 	font-family: "Tahoma";
 	font-size: 9pt;
 	color:#0000ff;
-	font-style:italic;
-}
-span.de_C629996958
-{
-	font-size: 14pt;
 	font-style:italic;
 }
 span.de_C63EDFFF30
@@ -1634,6 +1716,12 @@ span.de_CAB14B116D
 {
 	font-family: "Times New Roman";
 	font-size: 14pt;
+	color:#000000;
+}
+span.de_CBF33CA685
+{
+	font-family: "Consolas";
+	font-size: 11pt;
 	color:#000000;
 }
 span.de_CC616C7C8D
@@ -1706,6 +1794,12 @@ span.de_CF84B9CF87
 span.de_CF8D474060
 {
 	color:#008aff;
+}
+span.de_D05F94C18F
+{
+	font-family: "MS PGothic";
+	font-size: 11pt;
+	color:#000000;
 }
 span.de_D2D307ACB2
 {
@@ -1838,6 +1932,12 @@ span.de_E34FF555CA
 	color:#3f3f3f;
 	font-style:italic;
 }
+span.de_E3F9636E2D
+{
+	font-family: "Arial";
+	font-size: 12pt;
+	color:#b237c8;
+}
 span.de_E43A60A722
 {
 	color:#37c8c6;
@@ -1898,6 +1998,11 @@ span.de_E9C26A8FA3
 	color:#000000;
 	text-decoration:underline;
 }
+span.de_EA2C453BAC
+{
+	font-size: 14pt;
+	color:#ec4113;
+}
 span.de_EB57E1CB96
 {
 	font-family: "Arial";
@@ -1911,6 +2016,11 @@ span.de_EC8B4D5AF2
 	font-family: "Times New Roman";
 	font-size: 10pt;
 	color:#000000;
+}
+span.de_ECB3AE3B15
+{
+	color:#b237c8;
+	text-decoration:underline;
 }
 span.de_ECF90AE084
 {
@@ -5815,6 +5925,24 @@ span.de_FFE72917B2
 	counter-increment: list-counter-208;
 }
 .list-counter-208 > div > div[class='list-marker-chm'] {
+	display: inline-block;
+	text-align: left;
+	zoom: 1;
+	padding: 0;
+	margin: 0;
+	*display: inline;
+}
+.list-counter-209 > div > * {
+	text-indent: 0px;}
+.list-counter-209 > div > div[class='list-marker']:before {
+	display: inline-block;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	content: '' counter(list-counter-209, disc) '\00a0';
+	counter-increment: list-counter-209;
+}
+.list-counter-209 > div > div[class='list-marker-chm'] {
 	display: inline-block;
 	text-align: left;
 	zoom: 1;
